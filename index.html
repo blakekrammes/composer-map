@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no"/>
+    <title>ComposerMap</title>
+    <style>
+        html, body {
+            padding: 0;
+            margin: 0;
+            height: 100%;
+            width: 100%;
+        }
+        #viewDiv {
+            padding: 0;
+            margin: 0;
+            height: 80vh;
+            width: 100%;
+            margin: 0 auto;
+            padding-top: 10vh;
+        }
+        input {
+           /* width: 100vw; */
+           /* padding: 4rem; */
+        }
+        #year {
+            position: absolute;
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+            font-size: 2rem;
+        }
+    </style>
+    <link rel="stylesheet" href="https://js.arcgis.com/4.9/esri/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      let locationPath = location.pathname.replace(/\/[^\/]+$/, "");
+      window.dojoConfig = {
+        packages: [
+          {
+            name: "app",
+            location: locationPath + "/app"
+          }
+        ]
+      };
+    </script>
+    <script src="https://js.arcgis.com/4.9"></script>
+  </head>
+  <body>
+      <!-- <header class="scroll"> -->
+            <input type="range" id="test5" min="1500" max="2000" oninput="year.value = test5.value" />
+            <output id="year" name="year">1750</output>
+      <!-- </header> -->
+    <div id="viewDiv"></div>
+    <script>require(["app/main"]);</script>
+  </body>
+</html>
