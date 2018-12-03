@@ -6,7 +6,7 @@ import Graphic = require("esri/Graphic");
 
 // josquin
 let josquinMarker = new PictureMarkerSymbol({
-    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Josquin.jpg/166px-Josquin.jpg",
+    url: "./composerMap_images/josquin.jpg",
     width: "32px",
     height: "32px"
 });
@@ -23,7 +23,7 @@ let josquinPointGraphic = new Graphic({
 
 // byrd
 let byrdMarker = new PictureMarkerSymbol({
-    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/William_Byrd.jpg/220px-William_Byrd.jpg",
+    url: "./composerMap_images/byrd.jpg",
     width: "32px",
     height: "32px"
 });
@@ -40,7 +40,7 @@ let byrdPointGraphic = new Graphic({
 
 // palestrina
 let palestrinaMarker = new PictureMarkerSymbol({
-    url: "http://www.belcanto.ru/media/images/persons/palestrina.jpg",
+    url: "./composerMap_images/palestrina.jpg",
     width: "32px",
     height: "32px"
 });
@@ -57,7 +57,7 @@ let palestrinaPointGraphic = new Graphic({
 
 // lassus
 let lassusMarker = new PictureMarkerSymbol({
-    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Orlande_de_Lassus.jpg/250px-Orlande_de_Lassus.jpg",
+    url: "./composerMap_images/lassus.jpg",
     width: "32px",
     height: "32px"
 });
@@ -74,7 +74,7 @@ let lassusPointGraphic = new Graphic({
 
 // dowland
 let dowlandMarker = new PictureMarkerSymbol({
-    url: "https://lyricstranslate.com/files/styles/large/public/1563%20john%20dowland%20%283%29.jpg?itok=Q8dh9kY-",
+    url: "./composerMap_images/dowland.jpg",
     width: "32px",
     height: "32px"
 });
@@ -91,7 +91,7 @@ let dowlandPointGraphic = new Graphic({
 
 // purcell
 let purcellMarker = new PictureMarkerSymbol({
-    url: "https://cdn.radiofrance.fr/s3/cruiser-production/2013/09/76733558-1a3f-42e0-992b-7e7733459327/200x200_550px-henry_purcell_by_john_clostermanr.jpg",
+    url: "./composerMap_images/purcell.jpg",
     width: "32px",
     height: "32px"
 });
@@ -108,7 +108,7 @@ let purcellPointGraphic = new Graphic({
 
 // monteverdi
 let monteverdiMarker = new PictureMarkerSymbol({
-    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Bernardo_Strozzi_-_Claudio_Monteverdi_%28c.1630%29.jpg/220px-Bernardo_Strozzi_-_Claudio_Monteverdi_%28c.1630%29.jpg",
+    url: "./composerMap_images/monteverdi.jpg",
     width: "32px",
     height: "32px"
 });
@@ -125,7 +125,7 @@ let monteverdiPointGraphic = new Graphic({
 
 // vivaldi
 let vivaldiMarker = new PictureMarkerSymbol({
-    url: "https://cdn.britannica.com/s:300x300/30/154530-004-8D3A7064.jpg",
+    url: "./composerMap_images/vivaldi.jpg",
     width: "32px",
     height: "32px"
 });
@@ -142,7 +142,7 @@ let vivaldiPointGraphic = new Graphic({
 
 // couperin
 let couperinMarker = new PictureMarkerSymbol({
-    url: "https://i.pinimg.com/236x/65/d7/6f/65d76fa412911cc067707743e836b499--francois-couperin-composers.jpg",
+    url: "./composerMap_images/couperin.jpg",
     width: "32px",
     height: "32px"
 });
@@ -159,7 +159,7 @@ let couperinPointGraphic = new Graphic({
 
 // albinoni
 let albinoniMarker = new PictureMarkerSymbol({
-    url: "https://www.noviscore.fr/artiste-photo-tomaso-albinoni.jpg",
+    url: "./composerMap_images/albinoni.jpg",
     width: "32px",
     height: "32px"
 });
@@ -176,7 +176,7 @@ let albinoniPointGraphic = new Graphic({
 
 // telemann
 let telemannMarker = new PictureMarkerSymbol({
-    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Telemann.jpg/220px-Telemann.jpg",
+    url: "./composerMap_images/telemann.jpg",
     width: "32px",
     height: "32px"
 });
@@ -193,7 +193,7 @@ let telemannPointGraphic = new Graphic({
 
 // bach
 let bachMarker = new PictureMarkerSymbol({
-    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Johann_Sebastian_Bach.jpg/260px-Johann_Sebastian_Bach.jpg",
+    url: "./composerMap_images/bach.jpg",
     width: "32px",
     height: "32px"
 });
@@ -210,7 +210,7 @@ let bachPointGraphic = new Graphic({
 
 // scarlatti
 let scarlattiMarker = new PictureMarkerSymbol({
-    url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYcRCu-Frpguw_l3tq99XfyEZbr06IXkPMlJqokvXu6ex-fsXE",
+    url: "./composerMap_images/scarlatti.jpg",
     width: "32px",
     height: "32px"
 });
@@ -227,7 +227,7 @@ let scarlattiPointGraphic = new Graphic({
 
 // handel
 let handelMarker = new PictureMarkerSymbol({
-    url: "https://www.klassika.info/Komponisten/Haendel/Bild.png",
+    url: "./composerMap_images/handel.jpg",
     width: "32px",
     height: "32px"
 });
@@ -244,7 +244,7 @@ let handelPointGraphic = new Graphic({
 
 // beethoven
 let beethovenMarker = new PictureMarkerSymbol({
-    url: "https://236izu11yygk2uo6po3yerii7d6-wpengine.netdna-ssl.com/wp-content/uploads/2015/05/beethoven-350x350.png",
+    url: "./composerMap_images/beethoven.jpg",
     width: "32px",
     height: "32px"
 });
@@ -261,7 +261,7 @@ let beethovenPointGraphic = new Graphic({
 
 // haydn
 let haydnMarker = new PictureMarkerSymbol({
-    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Joseph_Haydn.jpg/220px-Joseph_Haydn.jpg",
+    url: "./composerMap_images/haydn.jpg",
     width: "32px",
     height: "32px"
 });
@@ -278,7 +278,7 @@ symbol: haydnMarker
 
 // mozart
 let mozartMarker = new PictureMarkerSymbol({
-    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Croce-Mozart-Detail.jpg/250px-Croce-Mozart-Detail.jpg",
+    url: "./composerMap_images/mozart.jpg",
     width: "32px",
     height: "32px"
 });
@@ -295,7 +295,7 @@ symbol: mozartMarker
 
 // salieri
 let salieriMarker = new PictureMarkerSymbol({
-    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Antonio_Salieri_painted_by_Joseph_Willibrord_M%C3%A4hler.jpg/220px-Antonio_Salieri_painted_by_Joseph_Willibrord_M%C3%A4hler.jpg",
+    url: "./composerMap_images/salieri.jpg",
     width: "32px",
     height: "32px"
 });
@@ -312,7 +312,7 @@ symbol: salieriMarker
 
 // vonWeber
 let vonWeberMarker = new PictureMarkerSymbol({
-    url: "http://artist1.cdn107.com/0fc/0fc72c078c1aa0e0289084b97907ee88_lg.jpg",
+    url: "./composerMap_images/vonWeber.jpg",
     width: "32px",
     height: "32px"
 });
@@ -329,7 +329,7 @@ let vonWeberPointGraphic = new Graphic({
 
 // schubert
 let schubertMarker = new PictureMarkerSymbol({
-    url: "https://gramophoneproduction.s3-accelerate.amazonaws.com/s3fs-public/styles/6_columns_wide/public/franz_schubert_composer_0.jpg?itok=L3q61elg",
+    url: "./composerMap_images/schubert.jpg",
     width: "32px",
     height: "32px"
 });
@@ -346,7 +346,7 @@ let schubertPointGraphic = new Graphic({
 
 // berlioz
 let berliozMarker = new PictureMarkerSymbol({
-    url: "http://artist3.cdn107.com/51a/51a67dfa8bd1296d2060cf4a84063e97_lg.jpg",
+    url: "./composerMap_images/berlioz.jpg",
     width: "32px",
     height: "32px"
 });
@@ -363,7 +363,7 @@ symbol: berliozMarker
 
 // chopin
 let chopinMarker = new PictureMarkerSymbol({
-    url: "https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTE1ODA0OTcxNTg2OTc5MzQx/frederic-chopin-9247162-1-402.jpg",
+    url: "./composerMap_images/chopin.jpg",
     width: "32px",
     height: "32px"
 });
@@ -380,7 +380,7 @@ symbol: chopinMarker
 
 // liszt
 let lisztMarker = new PictureMarkerSymbol({
-    url: "https://music.osu.edu/sites/music.osu.edu/files/styles/250_square_thumbnail/public/events-images/Liszt_%28Lehmann_portrait%29%20250x.png?itok=C-W2kmV5",
+    url: "./composerMap_images/liszt.jpg",
     width: "32px",
     height: "32px"
 });
@@ -397,7 +397,7 @@ symbol: lisztMarker
 
 // mendelssohn
 let mendelssohnMarker = new PictureMarkerSymbol({
-    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Mendelssohn_Bartholdy.jpg/220px-Mendelssohn_Bartholdy.jpg",
+    url: "./composerMap_images/mendelssohn.jpg",
     width: "32px",
     height: "32px"
 });
@@ -414,7 +414,7 @@ symbol: mendelssohnMarker
 
 // brahms
 let brahmsMarker = new PictureMarkerSymbol({
-    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Johannes_Brahms_1853.jpg/170px-Johannes_Brahms_1853.jpg",
+    url: "./composerMap_images/brahms.jpg",
     width: "32px",
     height: "32px"
 });
@@ -431,7 +431,7 @@ symbol: brahmsMarker
 
 // schumann
 let schumannMarker = new PictureMarkerSymbol({
-    url: "https://cdn.britannica.com/s:300x300/49/142349-004-5E7648E4.jpg",
+    url: "./composerMap_images/schumann.jpg",
     width: "32px",
     height: "32px"
 });
@@ -448,7 +448,7 @@ symbol: schumannMarker
 
 // grieg
 let griegMarker = new PictureMarkerSymbol({
-    url: "http://www.classical-music.com/sites/default/files/imagecache/250px_wide/images/Grieg%20for%20site.jpg",
+    url: "./composerMap_images/grieg.jpg",
     width: "32px",
     height: "32px"
 });
@@ -465,7 +465,7 @@ symbol: griegMarker
 
 // dvorak
 let dvorakMarker = new PictureMarkerSymbol({
-    url: "https://www.azquotes.com/public/pictures/authors/0d/f8/0df864663774534293442f461d9d5670/54824f05b5506_anton%C3%ADn_dvo%C5%99%C3%A1k.jpg",
+    url: "./composerMap_images/dvorak.jpg",
     width: "32px",
     height: "32px"
 });
@@ -482,7 +482,7 @@ symbol: dvorakMarker
 
 // mussorgsky
 let mussorgskyMarker = new PictureMarkerSymbol({
-    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/RepinMussorgsky.jpg/170px-RepinMussorgsky.jpg",
+    url: "./composerMap_images/mussorgsky.jpg",
     width: "32px",
     height: "32px"
 });
@@ -499,7 +499,7 @@ symbol: mussorgskyMarker
 
 // bruckner
 let brucknerMarker = new PictureMarkerSymbol({
-    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Anton_Bruckner.jpg/220px-Anton_Bruckner.jpg",
+    url: "./composerMap_images/bruckner.jpg",
     width: "32px",
     height: "32px"
 });
@@ -516,7 +516,7 @@ symbol: brucknerMarker
 
 // tchaikovsky
 let tchaikovskyMarker = new PictureMarkerSymbol({
-    url: "https://www.onthisday.com/images/people/pyotr-ilyich-tchaikovsky-200.jpg",
+    url: "./composerMap_images/tchaikovsky.jpg",
     width: "32px",
     height: "32px"
 });
@@ -533,7 +533,7 @@ symbol: tchaikovskyMarker
 
 // puccini
 let pucciniMarker = new PictureMarkerSymbol({
-    url: "http://www.calend.ru/img/content_events/i3/3302.jpg",
+    url: "./composerMap_images/puccini.jpg",
     width: "32px",
     height: "32px"
 });
@@ -550,7 +550,7 @@ symbol: pucciniMarker
 
 // saintSaëns
 let saintSaënsMarker = new PictureMarkerSymbol({
-    url: "https://images.findagrave.com/photos250/photos/2010/282/924_128673077144.jpg",
+    url: "./composerMap_images/sainSaëns.jpg",
     width: "32px",
     height: "32px"
 });
@@ -567,7 +567,7 @@ symbol: saintSaënsMarker
 
 // strauss
 let straussMarker = new PictureMarkerSymbol({
-    url: "https://gramophoneproduction.s3-accelerate.amazonaws.com/s3fs-public/styles/6_columns_wide/public/richard-strauss_1.jpg?itok=B41zFmKq",
+    url: "./composerMap_images/strauss.jpg",
     width: "32px",
     height: "32px"
 });
@@ -584,7 +584,7 @@ symbol: straussMarker
 
 // mahler
 let mahlerMarker = new PictureMarkerSymbol({
-    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Photo_of_Gustav_Mahler_by_Moritz_N%C3%A4hr_01.jpg/220px-Photo_of_Gustav_Mahler_by_Moritz_N%C3%A4hr_01.jpg",
+    url: "./composerMap_images/mahler.jpg",
     width: "32px",
     height: "32px"
 });
@@ -601,7 +601,7 @@ symbol: mahlerMarker
 
 // debussy
 let debussyMarker = new PictureMarkerSymbol({
-    url: "https://upload.wikimedia.org/wikipedia/en/thumb/b/b4/Claude_Debussy_atelier_Nadar.jpg/220px-Claude_Debussy_atelier_Nadar.jpg",
+    url: "./composerMap_images/debussy.jpg",
     width: "32px",
     height: "32px"
 });
@@ -618,7 +618,7 @@ symbol: debussyMarker
 
 // rachmaninoff
 let rachmaninoffMarker = new PictureMarkerSymbol({
-    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Sergei_Rachmaninoff-gb.jpg/220px-Sergei_Rachmaninoff-gb.jpg",
+    url: "./composerMap_images/rachmaninoff.jpg",
     width: "32px",
     height: "32px"
 });
@@ -635,7 +635,7 @@ symbol: rachmaninoffMarker
 
 // sibelius
 let sibeliusMarker = new PictureMarkerSymbol({
-    url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSufHRebU2QHl_uWno-xZweWpcsiAuBHtBk01OXWvCWV86WM61G",
+    url: "./composerMap_images/sibelius.jpg",
     width: "32px",
     height: "32px"
 });
