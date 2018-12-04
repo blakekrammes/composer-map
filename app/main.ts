@@ -6,7 +6,7 @@ import Graphic = require("esri/Graphic");
 
 // josquin
 let josquinMarker = new PictureMarkerSymbol({
-    url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/josquin.jpg?raw=true",
+    url: "https://i.imgur.com/xFLKVGI.jpg",
     width: "32px",
     height: "32px"
 });
@@ -23,7 +23,7 @@ let josquinPointGraphic = new Graphic({
 
 // byrd
 let byrdMarker = new PictureMarkerSymbol({
-    url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/byrd.jpg?raw=true",
+    url: "https://i.imgur.com/es7RrXK.jpg",
     width: "32px",
     height: "32px"
 });
@@ -40,7 +40,7 @@ let byrdPointGraphic = new Graphic({
 
 // palestrina
 let palestrinaMarker = new PictureMarkerSymbol({
-    url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/palestrina.jpg?raw=true",
+    url: "https://i.imgur.com/7g3CEfI.jpg",
     width: "32px",
     height: "32px"
 });
@@ -57,7 +57,7 @@ let palestrinaPointGraphic = new Graphic({
 
 // lassus
 let lassusMarker = new PictureMarkerSymbol({
-    url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/lassus.jpg?raw=true",
+    url: "https://i.imgur.com/liq7FG1.jpg",
     width: "32px",
     height: "32px"
 });
@@ -74,7 +74,7 @@ let lassusPointGraphic = new Graphic({
 
 // dowland
 let dowlandMarker = new PictureMarkerSymbol({
-    url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/dowland.jpg?raw=true",
+    url: "https://i.imgur.com/Iybfzct.jpg",
     width: "32px",
     height: "32px"
 });
@@ -91,7 +91,7 @@ let dowlandPointGraphic = new Graphic({
 
 // purcell
 let purcellMarker = new PictureMarkerSymbol({
-    url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/purcell.jpg?raw=true",
+    url: "https://i.imgur.com/cLSPqMw.jpg",
     width: "32px",
     height: "32px"
 });
@@ -108,7 +108,7 @@ let purcellPointGraphic = new Graphic({
 
 // monteverdi
 let monteverdiMarker = new PictureMarkerSymbol({
-    url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/monteverdi.jpg?raw=true",
+    url: "https://i.imgur.com/FcDnpoQ.jpg",
     width: "32px",
     height: "32px"
 });
@@ -125,7 +125,7 @@ let monteverdiPointGraphic = new Graphic({
 
 // vivaldi
 let vivaldiMarker = new PictureMarkerSymbol({
-    url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/vivaldi.jpg?raw=true",
+    url: "https://i.imgur.com/eiWjRJ6.jpg",
     width: "32px",
     height: "32px"
 });
@@ -142,7 +142,7 @@ let vivaldiPointGraphic = new Graphic({
 
 // couperin
 let couperinMarker = new PictureMarkerSymbol({
-    url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/couperin.jpg?raw=true",
+    url: "https://i.imgur.com/JvHJWNa.jpg",
     width: "32px",
     height: "32px"
 });
@@ -159,7 +159,7 @@ let couperinPointGraphic = new Graphic({
 
 // albinoni
 let albinoniMarker = new PictureMarkerSymbol({
-    url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/albinoni.jpg?raw=true",
+    url: "https://i.imgur.com/YkKO4SF.jpg",
     width: "32px",
     height: "32px"
 });
@@ -176,7 +176,7 @@ let albinoniPointGraphic = new Graphic({
 
 // telemann
 let telemannMarker = new PictureMarkerSymbol({
-    url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/telemann.jpg?raw=true",
+    url: "https://i.imgur.com/fj3Bpub.jpg",
     width: "32px",
     height: "32px"
 });
@@ -193,7 +193,7 @@ let telemannPointGraphic = new Graphic({
 
 // bach
 let bachMarker = new PictureMarkerSymbol({
-    url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/bach.jpg?raw=true",
+    url: "https://i.imgur.com/WOe4Dto.jpg",
     width: "32px",
     height: "32px"
 });
@@ -210,7 +210,7 @@ let bachPointGraphic = new Graphic({
 
 // scarlatti
 let scarlattiMarker = new PictureMarkerSymbol({
-    url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/scarlatti.jpg?raw=true",
+    url: "https://i.imgur.com/kMhmFcc.jpg",
     width: "32px",
     height: "32px"
 });
@@ -227,7 +227,7 @@ let scarlattiPointGraphic = new Graphic({
 
 // handel
 let handelMarker = new PictureMarkerSymbol({
-    url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/handel.png?raw=true",
+    url: "https://i.imgur.com/l6frukP.png",
     width: "32px",
     height: "32px"
 });
@@ -244,7 +244,7 @@ let handelPointGraphic = new Graphic({
 
 // beethoven
 let beethovenMarker = new PictureMarkerSymbol({
-    url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/beethoven.png?raw=true",
+    url: "https://i.imgur.com/WjOGtt6.png",
     width: "32px",
     height: "32px"
 });
@@ -261,7 +261,7 @@ let beethovenPointGraphic = new Graphic({
 
 // haydn
 let haydnMarker = new PictureMarkerSymbol({
-    url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/haydn.jpg?raw=true",
+    url: "https://i.imgur.com/TMJAuLB.jpg",
     width: "32px",
     height: "32px"
 });
@@ -278,7 +278,7 @@ symbol: haydnMarker
 
 // mozart
 let mozartMarker = new PictureMarkerSymbol({
-    url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/mozart.jpg?raw=true",
+    url: "https://i.imgur.com/ysrVQLo.jpg",
     width: "32px",
     height: "32px"
 });
@@ -295,7 +295,7 @@ symbol: mozartMarker
 
 // salieri
 let salieriMarker = new PictureMarkerSymbol({
-    url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/salieri.jpg?raw=true",
+    url: "https://i.imgur.com/Tt77SAc.jpg",
     width: "32px",
     height: "32px"
 });
@@ -312,7 +312,7 @@ symbol: salieriMarker
 
 // vonWeber
 let vonWeberMarker = new PictureMarkerSymbol({
-    url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/vonWeber.jpg?raw=true",
+    url: "https://i.imgur.com/BAdxWJB.jpg",
     width: "32px",
     height: "32px"
 });
@@ -329,7 +329,7 @@ let vonWeberPointGraphic = new Graphic({
 
 // schubert
 let schubertMarker = new PictureMarkerSymbol({
-    url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/schubert.jpg?raw=true",
+    url: "https://i.imgur.com/LFbwZoP.jpg",
     width: "32px",
     height: "32px"
 });
@@ -346,7 +346,7 @@ let schubertPointGraphic = new Graphic({
 
 // berlioz
 let berliozMarker = new PictureMarkerSymbol({
-    url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/berlioz.jpg?raw=true",
+    url: "https://i.imgur.com/Lc466V3.jpg",
     width: "32px",
     height: "32px"
 });
@@ -363,7 +363,7 @@ symbol: berliozMarker
 
 // chopin
 let chopinMarker = new PictureMarkerSymbol({
-    url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/chopin.jpg?raw=true",
+    url: "https://i.imgur.com/VKavVnU.jpg",
     width: "32px",
     height: "32px"
 });
@@ -380,7 +380,7 @@ symbol: chopinMarker
 
 // liszt
 let lisztMarker = new PictureMarkerSymbol({
-    url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/liszt.png?raw=true",
+    url: "https://i.imgur.com/gdX8VaD.png",
     width: "32px",
     height: "32px"
 });
@@ -397,7 +397,7 @@ symbol: lisztMarker
 
 // mendelssohn
 let mendelssohnMarker = new PictureMarkerSymbol({
-    url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/mendelssohn.jpg?raw=true",
+    url: "https://i.imgur.com/g4NELR0.jpg",
     width: "32px",
     height: "32px"
 });
@@ -414,7 +414,7 @@ symbol: mendelssohnMarker
 
 // brahms
 let brahmsMarker = new PictureMarkerSymbol({
-    url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/brahms.jpg?raw=true",
+    url: "https://i.imgur.com/dtaPoWo.jpg",
     width: "32px",
     height: "32px"
 });
@@ -431,7 +431,7 @@ symbol: brahmsMarker
 
 // schumann
 let schumannMarker = new PictureMarkerSymbol({
-    url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/schumann.jpg?raw=true",
+    url: "https://i.imgur.com/UFuEMXZ.jpg",
     width: "32px",
     height: "32px"
 });
@@ -448,7 +448,7 @@ symbol: schumannMarker
 
 // grieg
 let griegMarker = new PictureMarkerSymbol({
-    url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/grieg.jpg?raw=true",
+    url: "https://i.imgur.com/UPRtAbf.jpg",
     width: "32px",
     height: "32px"
 });
@@ -465,7 +465,7 @@ symbol: griegMarker
 
 // dvorak
 let dvorakMarker = new PictureMarkerSymbol({
-    url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/dvorak.jpg?raw=true",
+    url: "https://i.imgur.com/q7QkYUR.jpg",
     width: "32px",
     height: "32px"
 });
@@ -482,7 +482,7 @@ symbol: dvorakMarker
 
 // mussorgsky
 let mussorgskyMarker = new PictureMarkerSymbol({
-    url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/mussorgsky.jpg?raw=true",
+    url: "https://i.imgur.com/2mrJZ6C.jpg",
     width: "32px",
     height: "32px"
 });
@@ -499,7 +499,7 @@ symbol: mussorgskyMarker
 
 // bruckner
 let brucknerMarker = new PictureMarkerSymbol({
-    url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/bruckner.jpg?raw=true",
+    url: "https://i.imgur.com/NH9XDp3.jpg",
     width: "32px",
     height: "32px"
 });
@@ -516,7 +516,7 @@ symbol: brucknerMarker
 
 // tchaikovsky
 let tchaikovskyMarker = new PictureMarkerSymbol({
-    url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/tchaikovsky.jpg?raw=true",
+    url: "https://i.imgur.com/AjyiFbl.jpg",
     width: "32px",
     height: "32px"
 });
@@ -533,7 +533,7 @@ symbol: tchaikovskyMarker
 
 // puccini
 let pucciniMarker = new PictureMarkerSymbol({
-    url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/puccini.jpg?raw=true",
+    url: "https://i.imgur.com/CcPAFvs.jpg",
     width: "32px",
     height: "32px"
 });
@@ -550,7 +550,7 @@ symbol: pucciniMarker
 
 // saintSaëns
 let saintSaënsMarker = new PictureMarkerSymbol({
-    url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/sainSa%C3%ABns.jpg?raw=true",
+    url: "https://i.imgur.com/2XBAaUc.jpg",
     width: "32px",
     height: "32px"
 });
@@ -567,7 +567,7 @@ symbol: saintSaënsMarker
 
 // strauss
 let straussMarker = new PictureMarkerSymbol({
-    url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/strauss.jpg?raw=true",
+    url: "https://i.imgur.com/l7QzLRB.jpg",
     width: "32px",
     height: "32px"
 });
@@ -584,7 +584,7 @@ symbol: straussMarker
 
 // mahler
 let mahlerMarker = new PictureMarkerSymbol({
-    url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/mahler.jpg?raw=true",
+    url: "https://i.imgur.com/1Vxqtm3.jpg",
     width: "32px",
     height: "32px"
 });
@@ -601,7 +601,7 @@ symbol: mahlerMarker
 
 // debussy
 let debussyMarker = new PictureMarkerSymbol({
-    url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/debussy.jpg?raw=true",
+    url: "https://i.imgur.com/nkPhHSq.jpg",
     width: "32px",
     height: "32px"
 });
@@ -618,7 +618,7 @@ symbol: debussyMarker
 
 // rachmaninoff
 let rachmaninoffMarker = new PictureMarkerSymbol({
-    url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/rachmaninoff.jpg?raw=true",
+    url: "https://i.imgur.com/WJL8Ran.jpg",
     width: "32px",
     height: "32px"
 });
@@ -635,7 +635,7 @@ symbol: rachmaninoffMarker
 
 // sibelius
 let sibeliusMarker = new PictureMarkerSymbol({
-    url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/sibelius.jpg?raw=true",
+    url: "https://i.imgur.com/hcmJmyO.jpg",
     width: "32px",
     height: "32px"
 });
@@ -658,7 +658,7 @@ const map = new EsriMap({
 const view = new MapView({
   map: map,
   container: "viewDiv",
-  center: [1.8253548901935233, 48.70224135068023],
+  center: [11.025718049370735, 49.96332005792951],
   zoom: 4
 });
 
@@ -670,11 +670,6 @@ window.setInterval(() => {
     year = (<HTMLInputElement>document.getElementById('year')).value;
     // console.log(year)
     // tempYear = year;
-
-
-
-    // input.addEventListener('change', function() {
-        
     
     // Josquin
     if (parseInt(year, 10) >= 1450 && parseInt(year, 10) <= 1521) {
