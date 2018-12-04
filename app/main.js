@@ -3,7 +3,7 @@ define(["require", "exports", "esri/Map", "esri/views/MapView", "esri/geometry/P
     Object.defineProperty(exports, "__esModule", { value: true });
     // josquin
     var josquinMarker = new PictureMarkerSymbol({
-        url: "./composerMap_images/josquin.jpg",
+        url: "/composerMap_images/josquin.jpg",
         width: "32px",
         height: "32px"
     });
@@ -17,7 +17,7 @@ define(["require", "exports", "esri/Map", "esri/views/MapView", "esri/geometry/P
     });
     // byrd
     var byrdMarker = new PictureMarkerSymbol({
-        url: "./composerMap_images/byrd.jpg",
+        url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/byrd.jpg",
         width: "32px",
         height: "32px"
     });
@@ -31,7 +31,7 @@ define(["require", "exports", "esri/Map", "esri/views/MapView", "esri/geometry/P
     });
     // palestrina
     var palestrinaMarker = new PictureMarkerSymbol({
-        url: "./composerMap_images/palestrina.jpg",
+        url: "/composerMap_images/palestrina.jpg",
         width: "32px",
         height: "32px"
     });
@@ -45,7 +45,7 @@ define(["require", "exports", "esri/Map", "esri/views/MapView", "esri/geometry/P
     });
     // lassus
     var lassusMarker = new PictureMarkerSymbol({
-        url: "./composerMap_images/lassus.jpg",
+        url: "/composerMap_images/lassus.jpg",
         width: "32px",
         height: "32px"
     });
@@ -59,7 +59,7 @@ define(["require", "exports", "esri/Map", "esri/views/MapView", "esri/geometry/P
     });
     // dowland
     var dowlandMarker = new PictureMarkerSymbol({
-        url: "./composerMap_images/dowland.jpg",
+        url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/dowland.jpg",
         width: "32px",
         height: "32px"
     });
@@ -115,7 +115,7 @@ define(["require", "exports", "esri/Map", "esri/views/MapView", "esri/geometry/P
     });
     // couperin
     var couperinMarker = new PictureMarkerSymbol({
-        url: "./composerMap_images/couperin.jpg",
+        url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/couperin.jpg",
         width: "32px",
         height: "32px"
     });
@@ -129,7 +129,7 @@ define(["require", "exports", "esri/Map", "esri/views/MapView", "esri/geometry/P
     });
     // albinoni
     var albinoniMarker = new PictureMarkerSymbol({
-        url: "./composerMap_images/albinoni.jpg",
+        url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/albinoni.jpg",
         width: "32px",
         height: "32px"
     });
@@ -157,7 +157,7 @@ define(["require", "exports", "esri/Map", "esri/views/MapView", "esri/geometry/P
     });
     // bach
     var bachMarker = new PictureMarkerSymbol({
-        url: "./composerMap_images/bach.jpg",
+        url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/bach.jpg?raw=true",
         width: "32px",
         height: "32px"
     });
@@ -199,7 +199,7 @@ define(["require", "exports", "esri/Map", "esri/views/MapView", "esri/geometry/P
     });
     // beethoven
     var beethovenMarker = new PictureMarkerSymbol({
-        url: "./composerMap_images/beethoven.jpg",
+        url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/beethoven.png",
         width: "32px",
         height: "32px"
     });
@@ -283,7 +283,7 @@ define(["require", "exports", "esri/Map", "esri/views/MapView", "esri/geometry/P
     });
     // berlioz
     var berliozMarker = new PictureMarkerSymbol({
-        url: "./composerMap_images/berlioz.jpg",
+        url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/berlioz.jpg",
         width: "32px",
         height: "32px"
     });
@@ -297,7 +297,7 @@ define(["require", "exports", "esri/Map", "esri/views/MapView", "esri/geometry/P
     });
     // chopin
     var chopinMarker = new PictureMarkerSymbol({
-        url: "./composerMap_images/chopin.jpg",
+        url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/chopin.jpg",
         width: "32px",
         height: "32px"
     });
@@ -339,7 +339,7 @@ define(["require", "exports", "esri/Map", "esri/views/MapView", "esri/geometry/P
     });
     // brahms
     var brahmsMarker = new PictureMarkerSymbol({
-        url: "./composerMap_images/brahms.jpg",
+        url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/brahms.jpg",
         width: "32px",
         height: "32px"
     });
@@ -367,7 +367,7 @@ define(["require", "exports", "esri/Map", "esri/views/MapView", "esri/geometry/P
     });
     // grieg
     var griegMarker = new PictureMarkerSymbol({
-        url: "./composerMap_images/grieg.jpg",
+        url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/grieg.jpg",
         width: "32px",
         height: "32px"
     });
@@ -381,7 +381,7 @@ define(["require", "exports", "esri/Map", "esri/views/MapView", "esri/geometry/P
     });
     // dvorak
     var dvorakMarker = new PictureMarkerSymbol({
-        url: "./composerMap_images/dvorak.jpg",
+        url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/dvorak.jpg",
         width: "32px",
         height: "32px"
     });
@@ -409,7 +409,7 @@ define(["require", "exports", "esri/Map", "esri/views/MapView", "esri/geometry/P
     });
     // bruckner
     var brucknerMarker = new PictureMarkerSymbol({
-        url: "./composerMap_images/bruckner.jpg",
+        url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/bruckner.jpg",
         width: "32px",
         height: "32px"
     });
@@ -493,7 +493,7 @@ define(["require", "exports", "esri/Map", "esri/views/MapView", "esri/geometry/P
     });
     // debussy
     var debussyMarker = new PictureMarkerSymbol({
-        url: "./composerMap_images/debussy.jpg",
+        url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/debussy.jpg",
         width: "32px",
         height: "32px"
     });
