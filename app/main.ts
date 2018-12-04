@@ -6,7 +6,7 @@ import Graphic = require("esri/Graphic");
 
 // josquin
 let josquinMarker = new PictureMarkerSymbol({
-    url: "/composerMap_images/josquin.jpg",
+    url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/josquin.jpg?raw=true",
     width: "32px",
     height: "32px"
 });
@@ -23,7 +23,7 @@ let josquinPointGraphic = new Graphic({
 
 // byrd
 let byrdMarker = new PictureMarkerSymbol({
-    url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/byrd.jpg",
+    url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/byrd.jpg?raw=true",
     width: "32px",
     height: "32px"
 });
@@ -40,7 +40,7 @@ let byrdPointGraphic = new Graphic({
 
 // palestrina
 let palestrinaMarker = new PictureMarkerSymbol({
-    url: "/composerMap_images/palestrina.jpg",
+    url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/palestrina.jpg?raw=true",
     width: "32px",
     height: "32px"
 });
@@ -57,7 +57,7 @@ let palestrinaPointGraphic = new Graphic({
 
 // lassus
 let lassusMarker = new PictureMarkerSymbol({
-    url: "/composerMap_images/lassus.jpg",
+    url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/lassus.jpg?raw=true",
     width: "32px",
     height: "32px"
 });
@@ -74,7 +74,7 @@ let lassusPointGraphic = new Graphic({
 
 // dowland
 let dowlandMarker = new PictureMarkerSymbol({
-    url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/dowland.jpg",
+    url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/dowland.jpg?raw=true",
     width: "32px",
     height: "32px"
 });
@@ -91,7 +91,7 @@ let dowlandPointGraphic = new Graphic({
 
 // purcell
 let purcellMarker = new PictureMarkerSymbol({
-    url: "./composerMap_images/purcell.jpg",
+    url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/purcell.jpg?raw=true",
     width: "32px",
     height: "32px"
 });
@@ -108,7 +108,7 @@ let purcellPointGraphic = new Graphic({
 
 // monteverdi
 let monteverdiMarker = new PictureMarkerSymbol({
-    url: "./composerMap_images/monteverdi.jpg",
+    url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/monteverdi.jpg?raw=true",
     width: "32px",
     height: "32px"
 });
@@ -125,7 +125,7 @@ let monteverdiPointGraphic = new Graphic({
 
 // vivaldi
 let vivaldiMarker = new PictureMarkerSymbol({
-    url: "./composerMap_images/vivaldi.jpg",
+    url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/vivaldi.jpg?raw=true",
     width: "32px",
     height: "32px"
 });
@@ -142,7 +142,7 @@ let vivaldiPointGraphic = new Graphic({
 
 // couperin
 let couperinMarker = new PictureMarkerSymbol({
-    url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/couperin.jpg",
+    url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/couperin.jpg?raw=true",
     width: "32px",
     height: "32px"
 });
@@ -159,7 +159,7 @@ let couperinPointGraphic = new Graphic({
 
 // albinoni
 let albinoniMarker = new PictureMarkerSymbol({
-    url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/albinoni.jpg",
+    url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/albinoni.jpg?raw=true",
     width: "32px",
     height: "32px"
 });
@@ -176,7 +176,7 @@ let albinoniPointGraphic = new Graphic({
 
 // telemann
 let telemannMarker = new PictureMarkerSymbol({
-    url: "./composerMap_images/telemann.jpg",
+    url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/telemann.jpg?raw=true",
     width: "32px",
     height: "32px"
 });
@@ -210,7 +210,7 @@ let bachPointGraphic = new Graphic({
 
 // scarlatti
 let scarlattiMarker = new PictureMarkerSymbol({
-    url: "./composerMap_images/scarlatti.jpg",
+    url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/scarlatti.jpg?raw=true",
     width: "32px",
     height: "32px"
 });
@@ -227,7 +227,7 @@ let scarlattiPointGraphic = new Graphic({
 
 // handel
 let handelMarker = new PictureMarkerSymbol({
-    url: "./composerMap_images/handel.jpg",
+    url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/handel.png?raw=true",
     width: "32px",
     height: "32px"
 });
@@ -244,7 +244,7 @@ let handelPointGraphic = new Graphic({
 
 // beethoven
 let beethovenMarker = new PictureMarkerSymbol({
-    url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/beethoven.png",
+    url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/beethoven.png?raw=true",
     width: "32px",
     height: "32px"
 });
@@ -261,7 +261,7 @@ let beethovenPointGraphic = new Graphic({
 
 // haydn
 let haydnMarker = new PictureMarkerSymbol({
-    url: "./composerMap_images/haydn.jpg",
+    url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/haydn.jpg?raw=true",
     width: "32px",
     height: "32px"
 });
@@ -278,7 +278,7 @@ symbol: haydnMarker
 
 // mozart
 let mozartMarker = new PictureMarkerSymbol({
-    url: "./composerMap_images/mozart.jpg",
+    url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/mozart.jpg?raw=true",
     width: "32px",
     height: "32px"
 });
@@ -295,7 +295,7 @@ symbol: mozartMarker
 
 // salieri
 let salieriMarker = new PictureMarkerSymbol({
-    url: "./composerMap_images/salieri.jpg",
+    url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/salieri.jpg?raw=true",
     width: "32px",
     height: "32px"
 });
@@ -312,7 +312,7 @@ symbol: salieriMarker
 
 // vonWeber
 let vonWeberMarker = new PictureMarkerSymbol({
-    url: "./composerMap_images/vonWeber.jpg",
+    url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/vonWeber.jpg?raw=true",
     width: "32px",
     height: "32px"
 });
@@ -329,7 +329,7 @@ let vonWeberPointGraphic = new Graphic({
 
 // schubert
 let schubertMarker = new PictureMarkerSymbol({
-    url: "./composerMap_images/schubert.jpg",
+    url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/schubert.jpg?raw=true",
     width: "32px",
     height: "32px"
 });
@@ -346,7 +346,7 @@ let schubertPointGraphic = new Graphic({
 
 // berlioz
 let berliozMarker = new PictureMarkerSymbol({
-    url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/berlioz.jpg",
+    url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/berlioz.jpg?raw=true",
     width: "32px",
     height: "32px"
 });
@@ -363,7 +363,7 @@ symbol: berliozMarker
 
 // chopin
 let chopinMarker = new PictureMarkerSymbol({
-    url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/chopin.jpg",
+    url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/chopin.jpg?raw=true",
     width: "32px",
     height: "32px"
 });
@@ -380,7 +380,7 @@ symbol: chopinMarker
 
 // liszt
 let lisztMarker = new PictureMarkerSymbol({
-    url: "./composerMap_images/liszt.jpg",
+    url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/liszt.png?raw=true",
     width: "32px",
     height: "32px"
 });
@@ -397,7 +397,7 @@ symbol: lisztMarker
 
 // mendelssohn
 let mendelssohnMarker = new PictureMarkerSymbol({
-    url: "./composerMap_images/mendelssohn.jpg",
+    url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/mendelssohn.jpg?raw=true",
     width: "32px",
     height: "32px"
 });
@@ -414,7 +414,7 @@ symbol: mendelssohnMarker
 
 // brahms
 let brahmsMarker = new PictureMarkerSymbol({
-    url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/brahms.jpg",
+    url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/brahms.jpg?raw=true",
     width: "32px",
     height: "32px"
 });
@@ -431,7 +431,7 @@ symbol: brahmsMarker
 
 // schumann
 let schumannMarker = new PictureMarkerSymbol({
-    url: "./composerMap_images/schumann.jpg",
+    url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/schumann.jpg?raw=true",
     width: "32px",
     height: "32px"
 });
@@ -448,7 +448,7 @@ symbol: schumannMarker
 
 // grieg
 let griegMarker = new PictureMarkerSymbol({
-    url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/grieg.jpg",
+    url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/grieg.jpg?raw=true",
     width: "32px",
     height: "32px"
 });
@@ -465,7 +465,7 @@ symbol: griegMarker
 
 // dvorak
 let dvorakMarker = new PictureMarkerSymbol({
-    url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/dvorak.jpg",
+    url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/dvorak.jpg?raw=true",
     width: "32px",
     height: "32px"
 });
@@ -482,7 +482,7 @@ symbol: dvorakMarker
 
 // mussorgsky
 let mussorgskyMarker = new PictureMarkerSymbol({
-    url: "./composerMap_images/mussorgsky.jpg",
+    url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/mussorgsky.jpg?raw=true",
     width: "32px",
     height: "32px"
 });
@@ -499,7 +499,7 @@ symbol: mussorgskyMarker
 
 // bruckner
 let brucknerMarker = new PictureMarkerSymbol({
-    url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/bruckner.jpg",
+    url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/bruckner.jpg?raw=true",
     width: "32px",
     height: "32px"
 });
@@ -516,7 +516,7 @@ symbol: brucknerMarker
 
 // tchaikovsky
 let tchaikovskyMarker = new PictureMarkerSymbol({
-    url: "./composerMap_images/tchaikovsky.jpg",
+    url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/tchaikovsky.jpg?raw=true",
     width: "32px",
     height: "32px"
 });
@@ -533,7 +533,7 @@ symbol: tchaikovskyMarker
 
 // puccini
 let pucciniMarker = new PictureMarkerSymbol({
-    url: "./composerMap_images/puccini.jpg",
+    url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/puccini.jpg?raw=true",
     width: "32px",
     height: "32px"
 });
@@ -550,7 +550,7 @@ symbol: pucciniMarker
 
 // saintSaëns
 let saintSaënsMarker = new PictureMarkerSymbol({
-    url: "./composerMap_images/sainSaëns.jpg",
+    url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/sainSa%C3%ABns.jpg?raw=true",
     width: "32px",
     height: "32px"
 });
@@ -567,7 +567,7 @@ symbol: saintSaënsMarker
 
 // strauss
 let straussMarker = new PictureMarkerSymbol({
-    url: "./composerMap_images/strauss.jpg",
+    url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/strauss.jpg?raw=true",
     width: "32px",
     height: "32px"
 });
@@ -584,7 +584,7 @@ symbol: straussMarker
 
 // mahler
 let mahlerMarker = new PictureMarkerSymbol({
-    url: "./composerMap_images/mahler.jpg",
+    url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/mahler.jpg?raw=true",
     width: "32px",
     height: "32px"
 });
@@ -601,7 +601,7 @@ symbol: mahlerMarker
 
 // debussy
 let debussyMarker = new PictureMarkerSymbol({
-    url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/debussy.jpg",
+    url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/debussy.jpg?raw=true",
     width: "32px",
     height: "32px"
 });
@@ -618,7 +618,7 @@ symbol: debussyMarker
 
 // rachmaninoff
 let rachmaninoffMarker = new PictureMarkerSymbol({
-    url: "./composerMap_images/rachmaninoff.jpg",
+    url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/rachmaninoff.jpg?raw=true",
     width: "32px",
     height: "32px"
 });
@@ -635,7 +635,7 @@ symbol: rachmaninoffMarker
 
 // sibelius
 let sibeliusMarker = new PictureMarkerSymbol({
-    url: "./composerMap_images/sibelius.jpg",
+    url: "https://github.com/Blakesters/composer-map/blob/master/app/composerMap_images/sibelius.jpg?raw=true",
     width: "32px",
     height: "32px"
 });
@@ -662,10 +662,20 @@ const view = new MapView({
   zoom: 4
 });
 
-let year;
+let year:any;
+// let tempYear:any;
+let input = (<HTMLInputElement>document.getElementById('test5'));
 
 window.setInterval(() => {
     year = (<HTMLInputElement>document.getElementById('year')).value;
+    // console.log(year)
+    // tempYear = year;
+
+
+
+    // input.addEventListener('change', function() {
+        
+    
     // Josquin
     if (parseInt(year, 10) >= 1450 && parseInt(year, 10) <= 1521) {
         view.graphics.add(josquinPointGraphic);
@@ -933,8 +943,9 @@ window.setInterval(() => {
         view.graphics.remove(sibeliusPointGraphic);
     }
 }, 100);
+// });
 
-// view.graphics.addMany([beethovenPointGraphic, haydnPointGraphic, mozartPointGraphic, salieriPointGraphic]);
+
 
 
 
