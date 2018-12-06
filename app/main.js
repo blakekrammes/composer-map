@@ -1166,5 +1166,29 @@ define(["require", "exports", "esri/Map", "esri/views/MapView", "esri/geometry/P
         }
     }, 100);
     map.add(graphicsLayer);
+    // view.on("pointer-move", function(event){
+    //     console.log(event)
+    //     view.hitTest(event)
+    //         .then(function(response){
+    //             console.log(response)
+    //             // if (response.results) {
+    //             //     console.log(response)
+    //             // }
+    //         // check if a feature is returned from the hurricanesLayer
+    //         // do something with the result graphic
+    //         // const graphic = response.results.filter(function (result) {
+    //         //     // console.log(result.graphic.layer.graphics)
+    //         //     // return result.graphic === graphicsLayer;
+    //         // })[0].graphic;
+    //     });
+    // });
+    view.on("pointer-move", eventHandler);
+    function eventHandler(ev) {
+        view.hitTest(ev)
+            .then(getGraphics);
+    }
+    function getGraphics(res) {
+        console.log(res);
+    }
 });
 //# sourceMappingURL=main.js.map

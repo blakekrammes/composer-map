@@ -5,6 +5,7 @@ import PictureMarkerSymbol = require("esri/symbols/PictureMarkerSymbol");
 import Graphic = require("esri/Graphic");
 import GraphicsLayer = require("esri/layers/GraphicsLayer");
 import PopupTemplate = require("esri/PopupTemplate");
+import dojo = require("dojo-typings");
 
 // josquin
 let josquinMarker = new PictureMarkerSymbol({
@@ -896,7 +897,6 @@ const graphicsLayer = new GraphicsLayer({
 
 }); 
 
-
 // list of whether composers are displaying
 const isComposerDisplaying = {
     josquin: false, palestrina: false, lassus: false, byrd: false, dowland: false, purcell: false,
@@ -1334,8 +1334,39 @@ window.setInterval(() => {
 
 map.add(graphicsLayer);
 
+// view.on("pointer-move", function(event){
+
+//     console.log(event)
+
+//     view.hitTest(event)
+//         .then(function(response){
+//             console.log(response)
+//             // if (response.results) {
+//             //     console.log(response)
+//             // }
+
+            
+//         // check if a feature is returned from the hurricanesLayer
+//         // do something with the result graphic
+        
+//         // const graphic = response.results.filter(function (result) {
+//         //     // console.log(result.graphic.layer.graphics)
+//         //     // return result.graphic === graphicsLayer;
+//         // })[0].graphic;
+//     });
+// });
 
 
+view.on("pointer-move", eventHandler);
+
+function eventHandler(ev) {
+    view.hitTest(ev)
+    .then(getGraphics);
+}
+
+function getGraphics(res) {
+    console.log(res);
+}
 
 
 
