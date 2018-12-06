@@ -1,4 +1,4 @@
-define(["require", "exports", "esri/Map", "esri/views/MapView", "esri/geometry/Point", "esri/symbols/PictureMarkerSymbol", "esri/Graphic"], function (require, exports, EsriMap, MapView, Point, PictureMarkerSymbol, Graphic) {
+define(["require", "exports", "esri/Map", "esri/views/MapView", "esri/geometry/Point", "esri/symbols/PictureMarkerSymbol", "esri/Graphic", "esri/layers/GraphicsLayer", "esri/PopupTemplate"], function (require, exports, EsriMap, MapView, Point, PictureMarkerSymbol, Graphic, GraphicsLayer, PopupTemplate) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     // josquin
@@ -11,9 +11,14 @@ define(["require", "exports", "esri/Map", "esri/views/MapView", "esri/geometry/P
         longitude: 4.0621,
         latitude: 50.5257
     });
+    var josquinPopupTemplate = new PopupTemplate({
+        title: 'Josquin des Prez (c. 1450/1455 – 1521)',
+        content: "Composer of Renaissance polyphonic vocal music <br> Born in either Hainaut (modern-day Belgium) or modern-day France <br> Died in Cond\u00E9-sur-l'Escaut <br> Composition | <a href=\"https://www.youtube.com/watch?v=LUAgAF4Khmg\" target=\"_blank\">Ave Maria</a>"
+    });
     var josquinPointGraphic = new Graphic({
         geometry: josquinPoint,
-        symbol: josquinMarker
+        symbol: josquinMarker,
+        popupTemplate: josquinPopupTemplate
     });
     // byrd
     var byrdMarker = new PictureMarkerSymbol({
@@ -25,9 +30,14 @@ define(["require", "exports", "esri/Map", "esri/views/MapView", "esri/geometry/P
         longitude: 0.1278,
         latitude: 51.5074
     });
+    var byrdPopupTemplate = new PopupTemplate({
+        title: 'William Byrd (c.1539/40 or 1543 – 1623)',
+        content: 'Composer of sacred and secular polyphonic music <br> Born in London <br> Died in Stondon Massey <br> Composition | <a href="https://www.youtube.com/watch?v=Z2ckGcpx6xI" target="_blank">Ave Verum Corpus</a>'
+    });
     var byrdPointGraphic = new Graphic({
         geometry: byrdPoint,
-        symbol: byrdMarker
+        symbol: byrdMarker,
+        popupTemplate: byrdPopupTemplate
     });
     // palestrina
     var palestrinaMarker = new PictureMarkerSymbol({
@@ -39,9 +49,14 @@ define(["require", "exports", "esri/Map", "esri/views/MapView", "esri/geometry/P
         longitude: 12.8887,
         latitude: 41.8383
     });
+    var palestrinaPopupTemplate = new PopupTemplate({
+        title: 'Giovanni Pierluigi da Palestrina (c. 1525 – 1594)',
+        content: 'Composer of sacred polyphonic vocal music <br> Born in Palestrina <br> Died in Rome <br> Composition | <a href="https://www.youtube.com/watch?v=EJj0as_Mic4" target="_blank">Missa Papae Marcelli, Kyrie</a>'
+    });
     var palestrinaPointGraphic = new Graphic({
         geometry: palestrinaPoint,
-        symbol: palestrinaMarker
+        symbol: palestrinaMarker,
+        popupTemplate: palestrinaPopupTemplate
     });
     // lassus
     var lassusMarker = new PictureMarkerSymbol({
@@ -53,9 +68,14 @@ define(["require", "exports", "esri/Map", "esri/views/MapView", "esri/geometry/P
         longitude: 3.9567,
         latitude: 50.4542
     });
+    var lassusPopupTemplate = new PopupTemplate({
+        title: 'Orlande de Lassus (1532, possibly 1530 – 1594)',
+        content: 'Composer of sacred and secular polyphonic works <br> Born in Mons (modern-day Belgium) <br> Died in Munich <br> Composition | <a href="https://www.youtube.com/watch?v=UQN6gFnsGI4" target="_blank">La Nuict Froide et Sombre</a>'
+    });
     var lassusPointGraphic = new Graphic({
         geometry: lassusPoint,
-        symbol: lassusMarker
+        symbol: lassusMarker,
+        popupTemplate: lassusPopupTemplate
     });
     // dowland
     var dowlandMarker = new PictureMarkerSymbol({
@@ -67,9 +87,14 @@ define(["require", "exports", "esri/Map", "esri/views/MapView", "esri/geometry/P
         longitude: 0.1357,
         latitude: 51.4975
     });
+    var dowlandPopupTemplate = new PopupTemplate({
+        title: 'John Dowland (1563 – 1626)',
+        content: 'Composer of songs and music for lute <br> Born in London <br> Died in London <br> Composition | <a href="https://www.youtube.com/watch?v=Y9HKl8H0PWg" target="_blank">Flow My Tears</a>'
+    });
     var dowlandPointGraphic = new Graphic({
         geometry: dowlandPoint,
-        symbol: dowlandMarker
+        symbol: dowlandMarker,
+        popupTemplate: dowlandPopupTemplate
     });
     // purcell
     var purcellMarker = new PictureMarkerSymbol({
@@ -81,9 +106,14 @@ define(["require", "exports", "esri/Map", "esri/views/MapView", "esri/geometry/P
         longitude: 0.1357,
         latitude: 51.4975
     });
+    var purcellPopupTemplate = new PopupTemplate({
+        title: 'Henry Purcell (1563 – 1626)',
+        content: "Composer of opera, sacred, and incidental music <br> Born in London <br> Died in London <br> Composition | <a href=\"https://www.youtube.com/watch?v=S9xwlWfHWv4\" target=\"_blank\">Dido's Lament</a>"
+    });
     var purcellPointGraphic = new Graphic({
         geometry: purcellPoint,
-        symbol: purcellMarker
+        symbol: purcellMarker,
+        popupTemplate: purcellPopupTemplate
     });
     // monteverdi
     var monteverdiMarker = new PictureMarkerSymbol({
@@ -95,9 +125,14 @@ define(["require", "exports", "esri/Map", "esri/views/MapView", "esri/geometry/P
         longitude: 10.0227,
         latitude: 45.1332
     });
+    var monteverdiPopupTemplate = new PopupTemplate({
+        title: 'Claudio Monteverdi (1567 – 1643)',
+        content: "Composer of opera, sacred, and secular music <br> Born in Cremona <br> Died in Venice <br> Composition | <a href=\"https://www.youtube.com/watch?v=zsL4MGFh6QI\" target=\"_blank\">Lamento della Ninfa</a>"
+    });
     var monteverdiPointGraphic = new Graphic({
         geometry: monteverdiPoint,
-        symbol: monteverdiMarker
+        symbol: monteverdiMarker,
+        popupTemplate: monteverdiPopupTemplate
     });
     // vivaldi
     var vivaldiMarker = new PictureMarkerSymbol({
@@ -109,9 +144,14 @@ define(["require", "exports", "esri/Map", "esri/views/MapView", "esri/geometry/P
         longitude: 12.3155,
         latitude: 45.4408
     });
+    var vivaldiPopupTemplate = new PopupTemplate({
+        title: 'Antonio Vivaldi (1678 – 1741)',
+        content: "Composer of concertos, choral, and operatic music <br> Born in Venice <br> Died in Vienna <br> Composition | <a href=\"https://www.youtube.com/watch?v=QPba-i26YNA\" target=\"_blank\">Violin Concerto in A Minor RV356</a>"
+    });
     var vivaldiPointGraphic = new Graphic({
         geometry: vivaldiPoint,
-        symbol: vivaldiMarker
+        symbol: vivaldiMarker,
+        popupTemplate: vivaldiPopupTemplate
     });
     // couperin
     var couperinMarker = new PictureMarkerSymbol({
@@ -123,9 +163,14 @@ define(["require", "exports", "esri/Map", "esri/views/MapView", "esri/geometry/P
         longitude: 2.3522,
         latitude: 48.8566
     });
+    var couperinPopupTemplate = new PopupTemplate({
+        title: 'François Couperin (1668 – 1733)',
+        content: "Composer of harpsichord and vocal music <br> Born in Paris <br> Died in Paris <br> Composition | <a href=\"https://www.youtube.com/watch?v=R2mGjvrGbcE\" target=\"_blank\">Les Baricades Mist\u00E9rieuses</a>"
+    });
     var couperinPointGraphic = new Graphic({
         geometry: couperinPoint,
-        symbol: couperinMarker
+        symbol: couperinMarker,
+        popupTemplate: couperinPopupTemplate
     });
     // albinoni
     var albinoniMarker = new PictureMarkerSymbol({
@@ -137,9 +182,14 @@ define(["require", "exports", "esri/Map", "esri/views/MapView", "esri/geometry/P
         longitude: 12.3155,
         latitude: 45.4408
     });
+    var albinoniPopupTemplate = new PopupTemplate({
+        title: 'Tomaso Albinoni (1671 – 1751)',
+        content: "Composer of instrumental and operatic music <br> Born in Venice <br> Died in Venice <br> Composition | <a href=\"https://www.youtube.com/watch?v=LjgndGuy77o\" target=\"_blank\">Oboe Concerto #2 in D Minor Op. 9</a>"
+    });
     var albinoniPointGraphic = new Graphic({
         geometry: albinoniPoint,
-        symbol: albinoniMarker
+        symbol: albinoniMarker,
+        popupTemplate: albinoniPopupTemplate
     });
     // telemann
     var telemannMarker = new PictureMarkerSymbol({
@@ -151,9 +201,14 @@ define(["require", "exports", "esri/Map", "esri/views/MapView", "esri/geometry/P
         longitude: 11.6276,
         latitude: 52.1205
     });
+    var telemannPopupTemplate = new PopupTemplate({
+        title: 'Georg Philipp Telemann (1681 – 1767)',
+        content: "Composer of concertos, operas, orchestral and keyboard music <br> Born in Magdeburg <br> Died in Hamburg <br> Composition | <a href=\"https://www.youtube.com/watch?v=ZySASwzVDR0\" target=\"_blank\">Suite in A major</a>"
+    });
     var telemannPointGraphic = new Graphic({
         geometry: telemannPoint,
-        symbol: telemannMarker
+        symbol: telemannMarker,
+        popupTemplate: telemannPopupTemplate
     });
     // bach
     var bachMarker = new PictureMarkerSymbol({
@@ -165,9 +220,14 @@ define(["require", "exports", "esri/Map", "esri/views/MapView", "esri/geometry/P
         longitude: 10.3147,
         latitude: 50.9796
     });
+    var bachPopupTemplate = new PopupTemplate({
+        title: 'Johann Sebastian Bach (1685 – 1750)',
+        content: "Composer of contrapuntal sacred music and keyboard music <br> Born in Eisenach <br> Died in Leipzig <br> Composition | <a href=\"https://www.youtube.com/watch?v=5Belbi3tSQw\" target=\"_blank\">Mass in B minor - Gratias</a>"
+    });
     var bachPointGraphic = new Graphic({
         geometry: bachPoint,
-        symbol: bachMarker
+        symbol: bachMarker,
+        popupTemplate: bachPopupTemplate
     });
     // scarlatti
     var scarlattiMarker = new PictureMarkerSymbol({
@@ -176,8 +236,8 @@ define(["require", "exports", "esri/Map", "esri/views/MapView", "esri/geometry/P
         height: "32px"
     });
     var scarlattiPoint = new Point({
-        longitude: 81.7948,
-        latitude: 26.1420
+        longitude: 14.2681,
+        latitude: 40.8518
     });
     var scarlattiPointGraphic = new Graphic({
         geometry: scarlattiPoint,
@@ -543,280 +603,438 @@ define(["require", "exports", "esri/Map", "esri/views/MapView", "esri/geometry/P
         center: [11.025718049370735, 49.96332005792951],
         zoom: 4
     });
+    var graphicsLayer = new GraphicsLayer({});
+    // list of whether composers are displaying
+    var isComposerDisplaying = {
+        josquin: false, palestrina: false, lassus: false, byrd: false, dowland: false, purcell: false,
+        monteverdi: false, couperin: false, vivaldi: false, albinoni: false, telemann: false, handel: false, bach: false,
+        scarlatti: false, haydn: false, mozart: false, beethoven: false, salieri: false, vonWeber: false, schubert: false,
+        berlioz: false, chopin: false, mendelssohn: false, schumann: false, liszt: false, brahms: false,
+        grieg: false, dvorak: false, mussorgsky: false, bruckner: false, tchaikovsky: false, puccini: false,
+        saintSaëns: false, mahler: false, debussy: false, strauss: false, rachmaninoff: false, sibelius: false
+    };
     var year;
-    // let tempYear:any;
-    var input = document.getElementById('test5');
     window.setInterval(function () {
         year = document.getElementById('year').value;
-        // console.log(year)
-        // tempYear = year;
         // Josquin
         if (parseInt(year, 10) >= 1450 && parseInt(year, 10) <= 1521) {
-            view.graphics.add(josquinPointGraphic);
+            if (isComposerDisplaying.josquin !== true) {
+                graphicsLayer.graphics.add(josquinPointGraphic);
+                isComposerDisplaying.josquin = true;
+            }
         }
         else {
-            view.graphics.remove(josquinPointGraphic);
+            graphicsLayer.graphics.remove(josquinPointGraphic);
+            isComposerDisplaying.josquin = false;
         }
         // Palestrina
         if (parseInt(year, 10) >= 1525 && parseInt(year, 10) <= 1594) {
-            view.graphics.add(palestrinaPointGraphic);
+            if (isComposerDisplaying.palestrina !== true) {
+                graphicsLayer.graphics.add(palestrinaPointGraphic);
+                isComposerDisplaying.palestrina = true;
+            }
         }
         else {
-            view.graphics.remove(palestrinaPointGraphic);
+            graphicsLayer.graphics.remove(palestrinaPointGraphic);
+            isComposerDisplaying.palestrina = false;
         }
         // Lassus
         if (parseInt(year, 10) >= 1532 && parseInt(year, 10) <= 1594) {
-            view.graphics.add(lassusPointGraphic);
+            if (isComposerDisplaying.lassus !== true) {
+                graphicsLayer.graphics.add(lassusPointGraphic);
+                isComposerDisplaying.lassus = true;
+            }
         }
         else {
-            view.graphics.remove(lassusPointGraphic);
+            graphicsLayer.graphics.remove(lassusPointGraphic);
+            isComposerDisplaying.lassus = false;
         }
         // Byrd
         if (parseInt(year, 10) >= 1539 && parseInt(year, 10) <= 1623) {
-            view.graphics.add(byrdPointGraphic);
+            if (isComposerDisplaying.byrd !== true) {
+                graphicsLayer.graphics.add(byrdPointGraphic);
+                isComposerDisplaying.byrd = true;
+            }
         }
         else {
-            view.graphics.remove(byrdPointGraphic);
+            graphicsLayer.graphics.remove(byrdPointGraphic);
+            isComposerDisplaying.byrd = false;
         }
         // Dowland
         if (parseInt(year, 10) >= 1563 && parseInt(year, 10) <= 1626) {
-            view.graphics.add(dowlandPointGraphic);
+            if (isComposerDisplaying.dowland !== true) {
+                graphicsLayer.graphics.add(dowlandPointGraphic);
+                isComposerDisplaying.dowland = true;
+            }
         }
         else {
-            view.graphics.remove(dowlandPointGraphic);
+            graphicsLayer.graphics.remove(dowlandPointGraphic);
+            isComposerDisplaying.dowland = false;
         }
         // Purcell
         if (parseInt(year, 10) >= 1659 && parseInt(year, 10) <= 1695) {
-            view.graphics.add(purcellPointGraphic);
+            if (isComposerDisplaying.purcell !== true) {
+                graphicsLayer.graphics.add(purcellPointGraphic);
+                isComposerDisplaying.purcell = true;
+            }
         }
         else {
-            view.graphics.remove(purcellPointGraphic);
+            graphicsLayer.graphics.remove(purcellPointGraphic);
+            isComposerDisplaying.purcell = false;
         }
         // Monteverdi
         if (parseInt(year, 10) >= 1567 && parseInt(year, 10) <= 1643) {
-            view.graphics.add(monteverdiPointGraphic);
+            if (isComposerDisplaying.monteverdi !== true) {
+                graphicsLayer.graphics.add(monteverdiPointGraphic);
+                isComposerDisplaying.monteverdi = true;
+            }
         }
         else {
-            view.graphics.remove(monteverdiPointGraphic);
+            graphicsLayer.graphics.remove(monteverdiPointGraphic);
+            isComposerDisplaying.monteverdi = false;
         }
         // Couperin
         if (parseInt(year, 10) >= 1668 && parseInt(year, 10) <= 1733) {
-            view.graphics.add(couperinPointGraphic);
+            if (isComposerDisplaying.couperin !== true) {
+                graphicsLayer.graphics.add(couperinPointGraphic);
+                isComposerDisplaying.couperin = true;
+            }
         }
         else {
-            view.graphics.remove(couperinPointGraphic);
+            graphicsLayer.graphics.remove(couperinPointGraphic);
+            isComposerDisplaying.couperin = false;
         }
         // Vivaldi
         if (parseInt(year, 10) >= 1678 && parseInt(year, 10) <= 1741) {
-            view.graphics.add(vivaldiPointGraphic);
+            if (isComposerDisplaying.vivaldi !== true) {
+                graphicsLayer.graphics.add(vivaldiPointGraphic);
+                isComposerDisplaying.vivaldi = true;
+            }
         }
         else {
-            view.graphics.remove(vivaldiPointGraphic);
+            graphicsLayer.graphics.remove(vivaldiPointGraphic);
+            isComposerDisplaying.vivaldi = false;
         }
         // Albinoni
         if (parseInt(year, 10) >= 1671 && parseInt(year, 10) <= 1751) {
-            view.graphics.add(albinoniPointGraphic);
+            if (isComposerDisplaying.albinoni !== true) {
+                graphicsLayer.graphics.add(albinoniPointGraphic);
+                isComposerDisplaying.albinoni = true;
+            }
         }
         else {
-            view.graphics.remove(albinoniPointGraphic);
+            graphicsLayer.graphics.remove(albinoniPointGraphic);
+            isComposerDisplaying.albinoni = false;
         }
         // Telemann
         if (parseInt(year, 10) >= 1681 && parseInt(year, 10) <= 1767) {
-            view.graphics.add(telemannPointGraphic);
+            if (isComposerDisplaying.telemann !== true) {
+                graphicsLayer.graphics.add(telemannPointGraphic);
+                isComposerDisplaying.telemann = true;
+            }
         }
         else {
-            view.graphics.remove(telemannPointGraphic);
+            graphicsLayer.graphics.remove(telemannPointGraphic);
+            isComposerDisplaying.telemann = false;
         }
         // Bach
         if (parseInt(year, 10) >= 1685 && parseInt(year, 10) <= 1750) {
-            view.graphics.add(bachPointGraphic);
+            if (isComposerDisplaying.bach !== true) {
+                graphicsLayer.graphics.add(bachPointGraphic);
+                isComposerDisplaying.bach = true;
+            }
         }
         else {
-            view.graphics.remove(bachPointGraphic);
+            graphicsLayer.graphics.remove(bachPointGraphic);
+            isComposerDisplaying.bach = false;
         }
         // Scarlatti
         if (parseInt(year, 10) >= 1685 && parseInt(year, 10) <= 1757) {
-            view.graphics.add(scarlattiPointGraphic);
+            if (isComposerDisplaying.scarlatti !== true) {
+                graphicsLayer.graphics.add(scarlattiPointGraphic);
+                isComposerDisplaying.scarlatti = true;
+            }
         }
         else {
-            view.graphics.remove(scarlattiPointGraphic);
+            graphicsLayer.graphics.remove(scarlattiPointGraphic);
+            isComposerDisplaying.scarlatti = false;
         }
         // Handel
         if (parseInt(year, 10) >= 1685 && parseInt(year, 10) <= 1759) {
-            view.graphics.add(handelPointGraphic);
+            if (isComposerDisplaying.handel !== true) {
+                graphicsLayer.graphics.add(handelPointGraphic);
+                isComposerDisplaying.handel = true;
+            }
         }
         else {
-            view.graphics.remove(handelPointGraphic);
+            graphicsLayer.graphics.remove(handelPointGraphic);
+            isComposerDisplaying.handel = false;
         }
         // Beethoven
         if (parseInt(year, 10) >= 1770 && parseInt(year, 10) <= 1827) {
-            view.graphics.add(beethovenPointGraphic);
+            if (isComposerDisplaying.beethoven !== true) {
+                graphicsLayer.graphics.add(beethovenPointGraphic);
+                isComposerDisplaying.beethoven = true;
+            }
         }
         else {
-            view.graphics.remove(beethovenPointGraphic);
+            graphicsLayer.graphics.remove(beethovenPointGraphic);
+            isComposerDisplaying.beethoven = false;
         }
         // Mozart
         if (parseInt(year, 10) >= 1756 && parseInt(year, 10) <= 1791) {
-            view.graphics.add(mozartPointGraphic);
+            if (isComposerDisplaying.mozart !== true) {
+                graphicsLayer.graphics.add(mozartPointGraphic);
+                isComposerDisplaying.mozart = true;
+            }
         }
         else {
-            view.graphics.remove(mozartPointGraphic);
+            graphicsLayer.graphics.remove(mozartPointGraphic);
+            isComposerDisplaying.mozart = false;
         }
         // Haydn
         if (parseInt(year, 10) >= 1732 && parseInt(year, 10) <= 1809) {
-            view.graphics.add(haydnPointGraphic);
+            if (isComposerDisplaying.haydn !== true) {
+                graphicsLayer.graphics.add(haydnPointGraphic);
+                isComposerDisplaying.haydn = true;
+            }
         }
         else {
-            view.graphics.remove(haydnPointGraphic);
+            graphicsLayer.graphics.remove(haydnPointGraphic);
+            isComposerDisplaying.haydn = false;
         }
         // Salieri
         if (parseInt(year, 10) >= 1750 && parseInt(year, 10) <= 1825) {
-            view.graphics.add(salieriPointGraphic);
+            if (isComposerDisplaying.salieri !== true) {
+                graphicsLayer.graphics.add(salieriPointGraphic);
+                isComposerDisplaying.salieri = true;
+            }
         }
         else {
-            view.graphics.remove(salieriPointGraphic);
+            graphicsLayer.graphics.remove(salieriPointGraphic);
+            isComposerDisplaying.salieri = false;
         }
         // VonWeber
         if (parseInt(year, 10) >= 1786 && parseInt(year, 10) <= 1826) {
-            view.graphics.add(vonWeberPointGraphic);
+            if (isComposerDisplaying.vonWeber !== true) {
+                graphicsLayer.graphics.add(vonWeberPointGraphic);
+                isComposerDisplaying.vonWeber = true;
+            }
         }
         else {
-            view.graphics.remove(vonWeberPointGraphic);
+            graphicsLayer.graphics.remove(vonWeberPointGraphic);
+            isComposerDisplaying.vonWeber = false;
         }
         // Schubert
         if (parseInt(year, 10) >= 1797 && parseInt(year, 10) <= 1828) {
-            view.graphics.add(schubertPointGraphic);
+            if (isComposerDisplaying.schubert !== true) {
+                graphicsLayer.graphics.add(schubertPointGraphic);
+                isComposerDisplaying.schubert = true;
+            }
         }
         else {
-            view.graphics.remove(schubertPointGraphic);
+            graphicsLayer.graphics.remove(schubertPointGraphic);
+            isComposerDisplaying.schubert = false;
         }
         // Berlioz
         if (parseInt(year, 10) >= 1803 && parseInt(year, 10) <= 1869) {
-            view.graphics.add(berliozPointGraphic);
+            if (isComposerDisplaying.berlioz !== true) {
+                graphicsLayer.graphics.add(berliozPointGraphic);
+                isComposerDisplaying.berlioz = true;
+            }
         }
         else {
-            view.graphics.remove(berliozPointGraphic);
+            graphicsLayer.graphics.remove(berliozPointGraphic);
+            isComposerDisplaying.berlioz = false;
         }
         // Chopin
         if (parseInt(year, 10) >= 1810 && parseInt(year, 10) <= 1849) {
-            view.graphics.add(chopinPointGraphic);
+            if (isComposerDisplaying.chopin !== true) {
+                graphicsLayer.graphics.add(chopinPointGraphic);
+                isComposerDisplaying.chopin = true;
+            }
         }
         else {
-            view.graphics.remove(chopinPointGraphic);
+            graphicsLayer.graphics.remove(chopinPointGraphic);
+            isComposerDisplaying.chopin = false;
         }
         // Mendelssohn
         if (parseInt(year, 10) >= 1809 && parseInt(year, 10) <= 1847) {
-            view.graphics.add(mendelssohnPointGraphic);
+            if (isComposerDisplaying.mendelssohn !== true) {
+                graphicsLayer.graphics.add(mendelssohnPointGraphic);
+                isComposerDisplaying.mendelssohn = true;
+            }
         }
         else {
-            view.graphics.remove(mendelssohnPointGraphic);
+            graphicsLayer.graphics.remove(mendelssohnPointGraphic);
+            isComposerDisplaying.mendelssohn = false;
         }
         // Schumann
         if (parseInt(year, 10) >= 1810 && parseInt(year, 10) <= 1856) {
-            view.graphics.add(schumannPointGraphic);
+            if (isComposerDisplaying.schumann !== true) {
+                graphicsLayer.graphics.add(schumannPointGraphic);
+                isComposerDisplaying.schumann = true;
+            }
         }
         else {
-            view.graphics.remove(schumannPointGraphic);
+            graphicsLayer.graphics.remove(schumannPointGraphic);
+            isComposerDisplaying.schumann = false;
         }
         // Liszt
         if (parseInt(year, 10) >= 1811 && parseInt(year, 10) <= 1886) {
-            view.graphics.add(lisztPointGraphic);
+            if (isComposerDisplaying.liszt !== true) {
+                graphicsLayer.graphics.add(lisztPointGraphic);
+                isComposerDisplaying.liszt = true;
+            }
         }
         else {
-            view.graphics.remove(lisztPointGraphic);
+            graphicsLayer.graphics.remove(lisztPointGraphic);
+            isComposerDisplaying.liszt = false;
         }
         // Brahms
         if (parseInt(year, 10) >= 1833 && parseInt(year, 10) <= 1897) {
-            view.graphics.add(brahmsPointGraphic);
+            if (isComposerDisplaying.brahms !== true) {
+                graphicsLayer.graphics.add(brahmsPointGraphic);
+                isComposerDisplaying.brahms = true;
+            }
         }
         else {
-            view.graphics.remove(brahmsPointGraphic);
+            graphicsLayer.graphics.remove(brahmsPointGraphic);
+            isComposerDisplaying.brahms = false;
         }
         // Grieg
         if (parseInt(year, 10) >= 1843 && parseInt(year, 10) <= 1907) {
-            view.graphics.add(griegPointGraphic);
+            if (isComposerDisplaying.grieg !== true) {
+                graphicsLayer.graphics.add(griegPointGraphic);
+                isComposerDisplaying.grieg = true;
+            }
         }
         else {
-            view.graphics.remove(griegPointGraphic);
+            graphicsLayer.graphics.remove(griegPointGraphic);
+            isComposerDisplaying.grieg = false;
         }
         // Dvorak
         if (parseInt(year, 10) >= 1841 && parseInt(year, 10) <= 1904) {
-            view.graphics.add(dvorakPointGraphic);
+            if (isComposerDisplaying.dvorak !== true) {
+                graphicsLayer.graphics.add(dvorakPointGraphic);
+                isComposerDisplaying.dvorak = true;
+            }
         }
         else {
-            view.graphics.remove(dvorakPointGraphic);
+            graphicsLayer.graphics.remove(dvorakPointGraphic);
+            isComposerDisplaying.dvorak = false;
         }
         // Mussorgsky
         if (parseInt(year, 10) >= 1839 && parseInt(year, 10) <= 1881) {
-            view.graphics.add(mussorgskyPointGraphic);
+            if (isComposerDisplaying.mussorgsky !== true) {
+                graphicsLayer.graphics.add(mussorgskyPointGraphic);
+                isComposerDisplaying.mussorgsky = true;
+            }
         }
         else {
-            view.graphics.remove(mussorgskyPointGraphic);
+            graphicsLayer.graphics.remove(mussorgskyPointGraphic);
+            isComposerDisplaying.mussorgsky = false;
         }
         // Bruckner
         if (parseInt(year, 10) >= 1824 && parseInt(year, 10) <= 1896) {
-            view.graphics.add(brucknerPointGraphic);
+            if (isComposerDisplaying.bruckner !== true) {
+                graphicsLayer.graphics.add(brucknerPointGraphic);
+                isComposerDisplaying.bruckner = true;
+            }
         }
         else {
-            view.graphics.remove(brucknerPointGraphic);
+            graphicsLayer.graphics.remove(brucknerPointGraphic);
+            isComposerDisplaying.bruckner = false;
         }
         // Tchaikovsky
         if (parseInt(year, 10) >= 1840 && parseInt(year, 10) <= 1893) {
-            view.graphics.add(tchaikovskyPointGraphic);
+            if (isComposerDisplaying.tchaikovsky !== true) {
+                graphicsLayer.graphics.add(tchaikovskyPointGraphic);
+                isComposerDisplaying.tchaikovsky = true;
+            }
         }
         else {
-            view.graphics.remove(tchaikovskyPointGraphic);
+            graphicsLayer.graphics.remove(tchaikovskyPointGraphic);
+            isComposerDisplaying.tchaikovsky = false;
         }
         // Puccini
         if (parseInt(year, 10) >= 1858 && parseInt(year, 10) <= 1924) {
-            view.graphics.add(pucciniPointGraphic);
+            if (isComposerDisplaying.puccini !== true) {
+                graphicsLayer.graphics.add(pucciniPointGraphic);
+                isComposerDisplaying.puccini = true;
+            }
         }
         else {
-            view.graphics.remove(pucciniPointGraphic);
+            graphicsLayer.graphics.remove(pucciniPointGraphic);
+            isComposerDisplaying.puccini = false;
         }
         // SaintSäens
         if (parseInt(year, 10) >= 1835 && parseInt(year, 10) <= 1921) {
-            view.graphics.add(saintSaënsPointGraphic);
+            if (isComposerDisplaying.saintSaëns !== true) {
+                graphicsLayer.graphics.add(saintSaënsPointGraphic);
+                isComposerDisplaying.saintSaëns = true;
+            }
         }
         else {
-            view.graphics.remove(saintSaënsPointGraphic);
+            graphicsLayer.graphics.remove(saintSaënsPointGraphic);
+            isComposerDisplaying.saintSaëns = false;
         }
         // Strauss
         if (parseInt(year, 10) >= 1864 && parseInt(year, 10) <= 1949) {
-            view.graphics.add(straussPointGraphic);
+            if (isComposerDisplaying.strauss !== true) {
+                graphicsLayer.graphics.add(straussPointGraphic);
+                isComposerDisplaying.strauss = true;
+            }
         }
         else {
-            view.graphics.remove(straussPointGraphic);
+            graphicsLayer.graphics.remove(straussPointGraphic);
+            isComposerDisplaying.strauss = false;
         }
         // Mahler
         if (parseInt(year, 10) >= 1860 && parseInt(year, 10) <= 1911) {
-            view.graphics.add(mahlerPointGraphic);
+            if (isComposerDisplaying.mahler !== true) {
+                graphicsLayer.graphics.add(mahlerPointGraphic);
+                isComposerDisplaying.mahler = true;
+            }
         }
         else {
-            view.graphics.remove(mahlerPointGraphic);
+            graphicsLayer.graphics.remove(mahlerPointGraphic);
+            isComposerDisplaying.mahler = false;
         }
         // Debussy
         if (parseInt(year, 10) >= 1862 && parseInt(year, 10) <= 1918) {
-            view.graphics.add(debussyPointGraphic);
+            if (isComposerDisplaying.debussy !== true) {
+                graphicsLayer.graphics.add(debussyPointGraphic);
+                isComposerDisplaying.debussy = true;
+            }
         }
         else {
-            view.graphics.remove(debussyPointGraphic);
+            graphicsLayer.graphics.remove(debussyPointGraphic);
+            isComposerDisplaying.debussy = false;
         }
         // Rachmaninoff
         if (parseInt(year, 10) >= 1873 && parseInt(year, 10) <= 1943) {
-            view.graphics.add(rachmaninoffPointGraphic);
+            if (isComposerDisplaying.rachmaninoff !== true) {
+                graphicsLayer.graphics.add(rachmaninoffPointGraphic);
+                isComposerDisplaying.rachmaninoff = true;
+            }
         }
         else {
-            view.graphics.remove(rachmaninoffPointGraphic);
+            graphicsLayer.graphics.remove(rachmaninoffPointGraphic);
+            isComposerDisplaying.rachmaninoff = false;
         }
         // Sibelius
         if (parseInt(year, 10) >= 1865 && parseInt(year, 10) <= 1957) {
-            view.graphics.add(sibeliusPointGraphic);
+            if (isComposerDisplaying.sibelius !== true) {
+                graphicsLayer.graphics.add(sibeliusPointGraphic);
+                isComposerDisplaying.sibelius = true;
+            }
         }
         else {
-            view.graphics.remove(sibeliusPointGraphic);
+            graphicsLayer.graphics.remove(sibeliusPointGraphic);
+            isComposerDisplaying.sibelius = false;
         }
     }, 100);
+    map.add(graphicsLayer);
 });
-// });
 //# sourceMappingURL=main.js.map
