@@ -134,7 +134,7 @@ let purcellPoint = new Point({
 });
 
 let purcellPopupTemplate = new PopupTemplate({
-    title: 'Henry Purcell (1563 – 1626)',
+    title: 'Henry Purcell (1659 – 1695)',
     content: `Composer of opera, sacred, and incidental music <br> Born in London <br> Died in London <br> Composition | <a href="https://www.youtube.com/watch?v=S9xwlWfHWv4" target="_blank">Dido's Lament</a>`
 });
 
@@ -294,9 +294,15 @@ let scarlattiPoint = new Point({
     latitude: 40.8518
 });
 
+let scarlattiPopupTemplate = new PopupTemplate({
+    title: 'Domenico Scarlatti (1685 – 1757)',
+    content: `Composer of keyboard sonatas <br> Born in Naples <br> Died in Madrid <br> Composition | <a href="https://www.youtube.com/watch?v=wjghYFgt8Zk" target="_blank">Sonata in D minor K141</a>`
+});
+
 let scarlattiPointGraphic = new Graphic({
     geometry: scarlattiPoint,
-    symbol: scarlattiMarker
+    symbol: scarlattiMarker,
+    popupTemplate: scarlattiPopupTemplate
 });
 
 // handel
@@ -311,9 +317,15 @@ let handelPoint = new Point({
     latitude: 51.4970
 });
 
+let handelPopupTemplate = new PopupTemplate({
+    title: 'George Frideric Handel (1685 – 1759)',
+    content: `Composer of operas, oratorios, <br> Born in Halle-upon-Saale <br> Died in London <br> Composition | <a href="https://www.youtube.com/watch?v=MiXgOQ9_-RI" target="_blank">Zadok the Priest</a>`
+});
+
 let handelPointGraphic = new Graphic({
     geometry: handelPoint,
-    symbol: handelMarker
+    symbol: handelMarker,
+    popupTemplate: handelPopupTemplate
 });
 
 // beethoven
@@ -328,9 +340,15 @@ let beethovenPoint = new Point({
     latitude: 50.736576630668395
 });
 
+let beethovenPopupTemplate = new PopupTemplate({
+    title: 'Ludwig van Beethoven (1770 – 1827)',
+    content: `Composer of symphonies, chamber works, and piano music <br> Born in Bonn <br> Died in Vienna <br> Composition | <a href="https://www.youtube.com/watch?v=-uSME7Bv4JE" target="_blank">Missa Solemnis, Kyrie</a>`
+});
+
 let beethovenPointGraphic = new Graphic({
     geometry: beethovenPoint,
-    symbol: beethovenMarker
+    symbol: beethovenMarker,
+    popupTemplate: beethovenPopupTemplate
 });
 
 // haydn
@@ -345,9 +363,15 @@ let haydnPoint = new Point({
     latitude: 48.0656
 });
 
+let haydnPopupTemplate = new PopupTemplate({
+    title: 'Joseph Haydn (1732 – 1809)',
+    content: `Composer of symphonies, chamber works, and piano music <br> Born in Rohrau <br> Died in Vienna <br> Composition | <a href="https://www.youtube.com/watch?v=diz1sVIhNDA" target="_blank">Piano Sonata no. 47 in B minor Hob. XVI:32</a>`
+});
+
 let haydnPointGraphic = new Graphic({
 geometry: haydnPoint,
-symbol: haydnMarker
+symbol: haydnMarker,
+popupTemplate: haydnPopupTemplate
 });
 
 // mozart
@@ -362,9 +386,15 @@ let mozartPoint = new Point({
     latitude: 47.8095
 });
 
+let mozartPopupTemplate = new PopupTemplate({
+    title: 'Wolfgang Amadeus Mozart (1756 – 1791)',
+    content: `Composer of symphonies, chamber works, and piano music <br> Born in Salzburg <br> Died in Vienna <br> Composition | <a href="https://www.youtube.com/watch?v=8oESM64gU5M&t=136s" target="_blank">Lacrimosa</a>`
+});
+
 let mozartPointGraphic = new Graphic({
 geometry: mozartPoint,
-symbol: mozartMarker
+symbol: mozartMarker,
+popupTemplate: mozartPopupTemplate
 });
 
 // salieri
@@ -379,9 +409,15 @@ let salieriPoint = new Point({
     latitude: 45.1936
 });
 
+let salieriPopupTemplate = new PopupTemplate({
+    title: 'Antonio Salieri (1750 – 1825)',
+    content: `Composer of operas, sacred, and instrumental works <br> Born in Legnago <br> Died in Vienna <br> Composition | <a href="https://www.youtube.com/watch?v=G_5Dr8Bz5Bc" target="_blank">Sinfonia Veneziana</a>`
+});
+
 let salieriPointGraphic = new Graphic({
 geometry: salieriPoint,
-symbol: salieriMarker
+symbol: salieriMarker,
+popupTemplate: salieriPopupTemplate
 });
 
 // vonWeber
@@ -396,9 +432,15 @@ let vonWeberPoint = new Point({
     latitude: 54.1330
 });
 
+let vonWeberPopupTemplate = new PopupTemplate({
+    title: 'Carl Maria von Weber (1786 – 1826)',
+    content: `Composer of operas, symphonies, and concertos <br> Born in Eutin <br> Died in London <br> Composition | <a href="https://www.youtube.com/watch?v=ZdMqHNcL6xI" target="_blank">Der Freischutz, Overture</a>`
+});
+
 let vonWeberPointGraphic = new Graphic({
     geometry: vonWeberPoint,
-    symbol: vonWeberMarker
+    symbol: vonWeberMarker,
+    popupTemplate: vonWeberPopupTemplate
 });
 
 // schubert
@@ -413,9 +455,15 @@ let schubertPoint = new Point({
     latitude: 48.2266
 });
 
+let schubertPopupTemplate = new PopupTemplate({
+    title: 'Franz Schubert (1797 – 1828)',
+    content: `Composer of songs, symphonies, chamber and piano music <br> Born in Vienna <br> Died in Vienna <br> Composition | <a href="https://www.youtube.com/watch?v=X3JVZZ-INyM" target="_blank">Gute Nacht</a>`
+});
+
 let schubertPointGraphic = new Graphic({
     geometry: schubertPoint,
-    symbol: schubertMarker
+    symbol: schubertMarker,
+    popupTemplate: schubertPopupTemplate
 });
 
 // berlioz
@@ -430,9 +478,15 @@ let berliozPoint = new Point({
     latitude: 45.3938
 });
 
+let berliozPopupTemplate = new PopupTemplate({
+    title: 'Hector Berlioz (1803 – 1869)',
+    content: `Composer of symphonies, choral music and operas <br> Born in La Côte-Saint-André (south-eastern France) <br> Died in Paris <br> Composition | <a href="https://www.youtube.com/watch?v=Rp45bQkRLGM" target="_blank">L'enfance du Christ, L'Adieu des bergers à la sainte famille</a>`
+});
+
 let berliozPointGraphic = new Graphic({
 geometry: berliozPoint,
-symbol: berliozMarker
+symbol: berliozMarker,
+popupTemplate: berliozPopupTemplate
 });
 
 // chopin
@@ -447,9 +501,15 @@ let chopinPoint = new Point({
     latitude: 52.2574
 });
 
+let chopinPopupTemplate = new PopupTemplate({
+    title: 'Frédéric Chopin (1810 – 1849)',
+    content: `Composer of piano music <br> Born in Żelazowa Wola (near Warsaw) <br> Died in Paris <br> Composition | <a href="https://www.youtube.com/watch?v=X65vRfdHmCc" target="_blank">Andante Spianato</a>`
+});
+
 let chopinPointGraphic = new Graphic({
 geometry: chopinPoint,
-symbol: chopinMarker
+symbol: chopinMarker,
+popupTemplate: chopinPopupTemplate
 });
 
 // liszt
@@ -464,9 +524,15 @@ let lisztPoint = new Point({
     latitude: 47.5653
 });
 
+let lisztPopupTemplate = new PopupTemplate({
+    title: 'Franz Liszt (1811 – 1886)',
+    content: `Composer of piano music, piano transcriptions and symphonic poems <br> Born in Doborján <br> Died in Bayreuth <br> Composition | <a href="https://www.youtube.com/watch?v=3JXMdpGpfBU" target="_blank">Un Sospiro</a>`
+});
+
 let lisztPointGraphic = new Graphic({
-geometry: lisztPoint,
-symbol: lisztMarker
+    geometry: lisztPoint,
+    symbol: lisztMarker,
+    popupTemplate: lisztPopupTemplate
 });
 
 // mendelssohn
@@ -481,9 +547,15 @@ let mendelssohnPoint = new Point({
     latitude: 53.5511
 });
 
+let mendelssohnPopupTemplate = new PopupTemplate({
+    title: 'Felix Mendelssohn (1809 – 1847)',
+    content: `Composer of symphonies, concertos, chamber and piano music <br> Born in Hamburg <br> Died in Leipzig <br> Composition | <a href="https://www.youtube.com/watch?v=zcogD-hHEYs" target="_blank">Hebrides Overture (Fingal's Cave)</a>`
+});
+
 let mendelssohnPointGraphic = new Graphic({
-geometry: mendelssohnPoint,
-symbol: mendelssohnMarker
+    geometry: mendelssohnPoint,
+    symbol: mendelssohnMarker,
+    popupTemplate: mendelssohnPopupTemplate
 });
 
 // brahms
@@ -498,9 +570,15 @@ let brahmsPoint = new Point({
     latitude: 53.5511
 });
 
+let brahmsPopupTemplate = new PopupTemplate({
+    title: 'Johannes Brahms (1833 – 1897)',
+    content: `Composer of orchestral, choral, chamber and piano music <br> Born in Hamburg <br> Died in Vienna <br> Composition | <a href="https://www.youtube.com/watch?v=YD8i0jUmbF8" target="_blank">Intermezzo Op. 117, No. 1</a>`
+});
+
 let brahmsPointGraphic = new Graphic({
-geometry: brahmsPoint,
-symbol: brahmsMarker
+    geometry: brahmsPoint,
+    symbol: brahmsMarker,
+    popupTemplate: brahmsPopupTemplate
 });
 
 // schumann
@@ -515,9 +593,15 @@ let schumannPoint = new Point({
     latitude: 50.7102
 });
 
+let schumannPopupTemplate = new PopupTemplate({
+    title: 'Robert Schumann (1810 – 1856)',
+    content: `Composer of songs, piano, chamber and orchestral music  <br> Born in Zwickau <br> Died in Bonn <br> Composition | <a href="https://www.youtube.com/watch?v=dZX5YGhUuoE" target="_blank">Widmung (transcribed by Liszt)</a>`
+});
+
 let schumannPointGraphic = new Graphic({
-geometry: schumannPoint,
-symbol: schumannMarker
+    geometry: schumannPoint,
+    symbol: schumannMarker,
+    popupTemplate: schumannPopupTemplate
 });
 
 // grieg
@@ -532,9 +616,15 @@ let griegPoint = new Point({
     latitude: 60.3913
 });
 
+let griegPopupTemplate = new PopupTemplate({
+    title: 'Edvard Grieg (1843 – 1907)',
+    content: `Composer of piano, vocal, orchestral, chamber, and incidental music <br> Born in Bergen <br> Died in Bergen <br> Composition | <a href="https://www.youtube.com/watch?v=-rh8gMvzPw0" target="_blank">Peer Gynt, Morning Mood</a>`
+});
+
 let griegPointGraphic = new Graphic({
-geometry: griegPoint,
-symbol: griegMarker
+    geometry: griegPoint,
+    symbol: griegMarker,
+    popupTemplate: griegPopupTemplate
 });
 
 // dvorak
@@ -549,9 +639,15 @@ let dvorakPoint = new Point({
     latitude: 50.2615
 });
 
+let dvorakPopupTemplate = new PopupTemplate({
+    title: 'Antonín Dvořák (1841 – 1904)',
+    content: `Composer of concertos, symphonic, choral and operatic music <br> Born in Nelahozeves (near Prague) <br> Died in Prague <br> Composition | <a href="https://www.youtube.com/watch?v=ASlch7R1Zvo" target="_blank">Symphony no. 9, "From The New World" mvt. II, Largo</a>`
+});
+
 let dvorakPointGraphic = new Graphic({
-geometry: dvorakPoint,
-symbol: dvorakMarker
+    geometry: dvorakPoint,
+    symbol: dvorakMarker,
+    popupTemplate: dvorakPopupTemplate
 });
 
 // mussorgsky
@@ -566,9 +662,15 @@ let mussorgskyPoint = new Point({
     latitude: 56.2811
 });
 
+let mussorgskyPopupTemplate = new PopupTemplate({
+    title: 'Modest Mussorgsky (1839 – 1881)',
+    content: `Composer of orchestral, opera, vocal and piano music <br> Born in Karevo (Pskov Governorate) <br> Died in Saint Petersburg <br> Composition | <a href="https://www.youtube.com/watch?v=iCEDfZgDPS8" target="_blank">Night on Bald Mountain</a>`
+});
+
 let mussorgskyPointGraphic = new Graphic({
-geometry: mussorgskyPoint,
-symbol: mussorgskyMarker
+    geometry: mussorgskyPoint,
+    symbol: mussorgskyMarker,
+    popupTemplate: mussorgskyPopupTemplate
 });
 
 // bruckner
@@ -583,9 +685,15 @@ let brucknerPoint = new Point({
     latitude: 48.2077
 });
 
+let brucknerPopupTemplate = new PopupTemplate({
+    title: 'Anton Bruckner (1824 – 1896)',
+    content: `Composer of orchestral and choral music <br> Born in Ansfelden (now a suburb of Linz) <br> Died in Vienna <br> Composition | <a href="https://www.youtube.com/watch?v=ov-OAmpcRfw" target="_blank">Os Justi Meditabitur</a>`
+});
+
 let brucknerPointGraphic = new Graphic({
-geometry: brucknerPoint,
-symbol: brucknerMarker
+    geometry: brucknerPoint,
+    symbol: brucknerMarker,
+    popupTemplate: brucknerPopupTemplate
 });
 
 // tchaikovsky
@@ -600,9 +708,15 @@ let tchaikovskyPoint = new Point({
     latitude: 57.0409
 });
 
+let tchaikovskyPopupTemplate = new PopupTemplate({
+    title: 'Pyotr Ilyich Tchaikovsky (1840 – 1893)',
+    content: `Composer of orchestral, ballet, chamber, piano and liturgical music <br> Born in Votkinsk (Vyatka Governorate) <br> Died in Saint Petersburg <br> Composition | <a href="https://www.youtube.com/watch?v=BWerj8FcprM" target="_blank">Piano Concerto No. 1, B Flat Minor</a>`
+});
+
 let tchaikovskyPointGraphic = new Graphic({
-geometry: tchaikovskyPoint,
-symbol: tchaikovskyMarker
+    geometry: tchaikovskyPoint,
+    symbol: tchaikovskyMarker,
+    popupTemplate: tchaikovskyPopupTemplate
 });
 
 // puccini
@@ -617,9 +731,15 @@ let pucciniPoint = new Point({
     latitude: 43.8429
 });
 
+let pucciniPopupTemplate = new PopupTemplate({
+    title: 'Giacomo Puccini (1858 – 1924)',
+    content: `Composer of opera <br> Born in Lucca <br> Died in Brussels <br> Composition | <a href="https://www.youtube.com/watch?v=rTFUM4Uh_6Y" target="_blank">Nessun Dorma (from Turandot)</a>`
+});
+
 let pucciniPointGraphic = new Graphic({
-geometry: pucciniPoint,
-symbol: pucciniMarker
+    geometry: pucciniPoint,
+    symbol: pucciniMarker,
+    popupTemplate: pucciniPopupTemplate
 });
 
 // saintSaëns
@@ -634,9 +754,15 @@ let saintSaënsPoint = new Point({
     latitude: 48.8566
 });
 
+let sainSaënsPopupTemplate = new PopupTemplate({
+    title: 'Camille Saint-Saëns (1835 – 1921)',
+    content: `Composer of orchestral, opera, piano and chamber music <br> Born in Paris <br> Died in Algiers <br> Composition | <a href="https://www.youtube.com/watch?v=b44-5M4e9nI" target="_blank">The Swan, Carnival of the Animals</a>`
+});
+
 let saintSaënsPointGraphic = new Graphic({
-geometry: saintSaënsPoint,
-symbol: saintSaënsMarker
+    geometry: saintSaënsPoint,
+    symbol: saintSaënsMarker,
+    popupTemplate: sainSaënsPopupTemplate
 });
 
 // strauss
@@ -651,9 +777,15 @@ let straussPoint = new Point({
     latitude: 48.1351
 });
 
+let straussPopupTemplate = new PopupTemplate({
+    title: 'Richard Strauss (1864 – 1949)',
+    content: `Composer of orchestral, opera, ballet, piano and chamber music <br> Born in Munich <br> Died in Garmisch-Partenkirchen (Bavaria) <br> Composition | <a href="https://www.youtube.com/watch?v=bMrg9blUTig" target="_blank">Morgen</a>`
+});
+
 let straussPointGraphic = new Graphic({
-geometry: straussPoint,
-symbol: straussMarker
+    geometry: straussPoint,
+    symbol: straussMarker,
+    popupTemplate: straussPopupTemplate
 });
 
 // mahler
@@ -668,9 +800,15 @@ let mahlerPoint = new Point({
     latitude: 49.5926
 });
 
+let mahlerPopupTemplate = new PopupTemplate({
+    title: 'Gustav Mahler (1860 – 1911)',
+    content: `Composer of songs and orchestral music <br> Born in Kaliště <br> Died in Vienna <br> Composition | <a href="https://www.youtube.com/watch?v=TzJyIWxjX9o" target="_blank">Ich bin der Welt abhanden gekommen</a>`
+});
+
 let mahlerPointGraphic = new Graphic({
-geometry: mahlerPoint,
-symbol: mahlerMarker
+    geometry: mahlerPoint,
+    symbol: mahlerMarker,
+    popupTemplate: mahlerPopupTemplate
 });
 
 // debussy
@@ -685,9 +823,15 @@ let debussyPoint = new Point({
     latitude: 48.8989
 });
 
+let debussyPopupTemplate = new PopupTemplate({
+    title: 'Claude Debussy (1862 – 1918)',
+    content: `Composer of orchestral, piano, chamber and ballet music <br> Born in Paris <br> Died in Paris <br> Composition | <a href="https://www.youtube.com/watch?v=JjKaOfpJkWY" target="_blank">Children's Corner, I. Doctor Gradus ad Parnassum</a>`
+});
+
 let debussyPointGraphic = new Graphic({
-geometry: debussyPoint,
-symbol: debussyMarker
+    geometry: debussyPoint,
+    symbol: debussyMarker,
+    popupTemplate: debussyPopupTemplate
 });
 
 // rachmaninoff
@@ -702,9 +846,15 @@ let rachmaninoffPoint = new Point({
     latitude: 57.9124
 });
 
+let rachmaninoffPopupTemplate = new PopupTemplate({
+    title: 'Sergei Rachmaninoff (1873 – 1943)',
+    content: `Composer of piano, orchestral and liturgical music <br> Born in Starorussky Uyezd <br> Died in Beverly Hills <br> Composition | <a href="https://www.youtube.com/watch?v=InMhSNBlIg8" target="_blank">Bogoroditse Devo (from All-Night-Vigil)</a>`
+});
+
 let rachmaninoffPointGraphic = new Graphic({
-geometry: rachmaninoffPoint,
-symbol: rachmaninoffMarker
+    geometry: rachmaninoffPoint,
+    symbol: rachmaninoffMarker,
+    popupTemplate: rachmaninoffPopupTemplate
 });
 
 // sibelius
@@ -719,9 +869,15 @@ let sibeliusPoint = new Point({
     latitude: 60.9929
 });
 
+let sibeliusPopupTemplate = new PopupTemplate({
+    title: 'Jean Sibelius (1865 – 1957)',
+    content: `Composer of orchestral, chamber and vocal music <br> Born in Hämeenlinna <br> Died in Ainola <br> Composition | <a href="https://www.youtube.com/watch?v=F5zg_af9b8c" target="_blank">Finlandia</a>`
+});
+
 let sibeliusPointGraphic = new Graphic({
     geometry: sibeliusPoint,
-    symbol: sibeliusMarker
+    symbol: sibeliusMarker,
+    popupTemplate: sibeliusPopupTemplate
 });
 
 // esri map
