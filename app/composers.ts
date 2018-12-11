@@ -1,5 +1,31 @@
 let composers = [
     {
+        name: "duFay",
+        birth: 1397,
+        death: 1474,
+        url: "https://i.imgur.com/3CUpvSQ.jpg",
+        coordinates: {
+            longitude: 4.3517,
+            latitude: 50.8503
+        },
+        popupTitle: "Guillaume Du Fay (1397 – 1474)",
+        popupContent: `Composer of masses, motets and secular songs <br> Born in Brussels <br> Died in Cambrai <br> Composition | <a href="https://www.youtube.com/watch?v=_dV5b8AuLHg" target="_blank">Nuper Rosarum Flores</a>`,
+        isDisplaying: false
+    },
+    {
+        name: "dunstaple",
+        birth: 1390,
+        death: 1453,
+        url: "https://i.imgur.com/vMj1AhY.jpg?1",
+        coordinates: {
+            longitude: 0.1357,
+            latitude: 51.4975
+        },
+        popupTitle: "John Dunstaple (c. 1390 – 1453)",
+        popupContent: `Composer of sacred polyphonic music <br> Born in Dunstable <br> Died in London <br> Composition | <a href="https://www.youtube.com/watch?v=NPYmHyv1KeE" target="_blank">Veni Creator Spiritus</a>`,
+        isDisplaying: false
+    },
+    {
         name: "josquin",
         birth: 1450,
         death: 1521,
@@ -18,7 +44,7 @@ let composers = [
         death: 1623,
         url: "https://i.imgur.com/es7RrXK.jpg",
         coordinates: {
-            longitude: 0.1278,
+            longitude: -0.4278,
             latitude: 51.5074
         },
         popupTitle: "William Byrd (c.1539/40 or 1543 – 1623)",
@@ -52,13 +78,26 @@ let composers = [
         isDisplaying: false
     },
     {
+        name: "gabrieli",
+        birth: 1554,
+        death: 1612,
+        url: "https://i.imgur.com/mPEu5DY.jpg?1",
+        coordinates: {
+            longitude: 12.3155,
+            latitude: 45.4408
+        },
+        popupTitle: 'Giovanni Gabrieli (c. 1554/1557 – 1612)',
+        popupContent: `Composer of sacred vocal and instrumental music <br> Born in Venice <br> Died in Venice <br> Composition | <a href="https://www.youtube.com/watch?v=DP8zh3-4qrU" target="_blank">Suscipe</a>`,
+        isDisplaying: false
+    },
+    {
         name: "dowland",
         birth: 1563,
         death: 1626,
         url: "https://i.imgur.com/Iybfzct.jpg",
         coordinates: {
-            longitude: 0.1357,
-            latitude: 51.4975
+            longitude: 0.3278,
+            latitude: 51.5074
         },
         popupTitle: 'John Dowland (1563 – 1626)',
         popupContent: 'Composer of songs and music for lute <br> Born in London <br> Died in London <br> Composition | <a href="https://www.youtube.com/watch?v=Y9HKl8H0PWg" target="_blank">Flow My Tears</a>',
@@ -480,6 +519,20 @@ let composers = [
         popupContent: `Composer of orchestral, chamber and vocal music <br> Born in Hämeenlinna <br> Died in Ainola <br> Composition | <a href="https://www.youtube.com/watch?v=F5zg_af9b8c" target="_blank">Finlandia</a>`,
         isDisplaying: false
     }
+    {
+        name: "schoenberg",
+        birth: 1874,
+        death: 1951,
+        url: "https://i.imgur.com/ZafyPBj.jpg",
+        coordinates: {
+            longitude: 16.3738,
+            latitude: 48.2082
+        },
+        popupTitle: 'Arnold Schoenberg (1874 – 1951)',
+        popupContent: `Composer of orchestral, chamber, piano and vocal music <br> Born in Vienna <br> Died in Los Angeles <br> Composition | <a href="https://www.youtube.com/watch?v=FXhAtBT57zA" target="_blank">Gurre-Lieder</a>`,
+        isDisplaying: false
+    }
+    
 ];
 
 export default composers; 

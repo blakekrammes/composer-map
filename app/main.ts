@@ -21,56 +21,71 @@ const view = new MapView({
 
 const graphicsLayer = new GraphicsLayer({}); 
 
-let year:any;
+let year;
 
 window.setInterval(() => {
     year = (<HTMLInputElement>document.getElementById('year')).value;
 
     let intYear = parseInt(year, 10);
 
-    // let point, marker, popupTemplate, pointGraphic:any;
-
- 
+    // create and place a graphic for each composer living at the specified year 
     composers.forEach(composer => {
         if (intYear >= composer.birth && intYear <= composer.death) {
             if (composer.isDisplaying !== true) {
-                window[composer.name+'Marker'] = new PictureMarkerSymbol({
+
+                graphicsLayer.graphics.items.forEach(graphic => {
+                    if (graphic.geometry.longitude === composer.coordinates.longitude && graphic.geometry.latitude === composer.coordinates.latitude) {
+                        composer.coordinates.longitude = composer.coordinates.longitude + .08;
+                    }
+                });
+
+                let marker = new PictureMarkerSymbol({
                     url: composer.url,
                     width: "32px",
                     height: "32px"
                 });
-                window[composer.name+'Point'] = new Point({
+                let point = new Point({
                     longitude: composer.coordinates.longitude,
                     latitude: composer.coordinates.latitude
                 });
-                window[composer.name+'PopupTemplate'] = new PopupTemplate({
+                let popupTemplate = new PopupTemplate({
                     title: composer.popupTitle,
                     content: composer.popupContent
                 });
+                // use the window object to store unique variable names for each composer graphic so they can later be removed by name
                 window[composer.name+'Graphic'] = new Graphic({
-                    geometry: window[composer.name+'Point'],
-                    symbol: window[composer.name+'Marker'],
-                    popupTemplate: window[composer.name+'PopupTemplate']
+                    geometry: point,
+                    symbol: marker,
+                    popupTemplate: popupTemplate
                 });
+
                 graphicsLayer.graphics.add(window[composer.name+'Graphic']);
                 composer.isDisplaying = true;
             }
         }
     });
 
-
+    // remove any composer graphics that are not living at the specified year
     composers.forEach(composer => {
         if (intYear < composer.birth || intYear > composer.death) {
             graphicsLayer.graphics.remove(window[composer.name+'Graphic']);
             composer.isDisplaying = false;
         }
     });
+
 }, 100);
 
 
 map.add(graphicsLayer);
 
-console.log(window)
+// console.log(graphicsLayer.graphics.items)
+
+let inputDiv = (<HTMLInputElement>document.getElementsByClassName('input-div')[0]);
+
+let domYear = (<HTMLInputElement>document.getElementById('year'));
+
+view.ui.add(inputDiv, "top-right");
+view.ui.add(domYear);
 
 // view.on("pointer-move", function(event){
 

@@ -16,33 +16,40 @@ define(["require", "exports", "esri/Map", "esri/views/MapView", "esri/geometry/P
     window.setInterval(function () {
         year = document.getElementById('year').value;
         var intYear = parseInt(year, 10);
-        // let point, marker, popupTemplate, pointGraphic:any;
+        // create and place a graphic for each composer living at the specified year 
         composers_1.default.forEach(function (composer) {
             if (intYear >= composer.birth && intYear <= composer.death) {
                 if (composer.isDisplaying !== true) {
-                    window[composer.name + 'Marker'] = new PictureMarkerSymbol({
+                    graphicsLayer.graphics.items.forEach(function (graphic) {
+                        if (graphic.geometry.longitude === composer.coordinates.longitude && graphic.geometry.latitude === composer.coordinates.latitude) {
+                            composer.coordinates.longitude = composer.coordinates.longitude + .08;
+                        }
+                    });
+                    var marker = new PictureMarkerSymbol({
                         url: composer.url,
                         width: "32px",
                         height: "32px"
                     });
-                    window[composer.name + 'Point'] = new Point({
+                    var point = new Point({
                         longitude: composer.coordinates.longitude,
                         latitude: composer.coordinates.latitude
                     });
-                    window[composer.name + 'PopupTemplate'] = new PopupTemplate({
+                    var popupTemplate = new PopupTemplate({
                         title: composer.popupTitle,
                         content: composer.popupContent
                     });
+                    // use the window object to store unique variable names for each composer graphic so they can later be removed by name
                     window[composer.name + 'Graphic'] = new Graphic({
-                        geometry: window[composer.name + 'Point'],
-                        symbol: window[composer.name + 'Marker'],
-                        popupTemplate: window[composer.name + 'PopupTemplate']
+                        geometry: point,
+                        symbol: marker,
+                        popupTemplate: popupTemplate
                     });
                     graphicsLayer.graphics.add(window[composer.name + 'Graphic']);
                     composer.isDisplaying = true;
                 }
             }
         });
+        // remove any composer graphics that are not living at the specified year
         composers_1.default.forEach(function (composer) {
             if (intYear < composer.birth || intYear > composer.death) {
                 graphicsLayer.graphics.remove(window[composer.name + 'Graphic']);
@@ -51,7 +58,11 @@ define(["require", "exports", "esri/Map", "esri/views/MapView", "esri/geometry/P
         });
     }, 100);
     map.add(graphicsLayer);
-    console.log(window);
+    // console.log(graphicsLayer.graphics.items)
+    var inputDiv = document.getElementsByClassName('input-div')[0];
+    var domYear = document.getElementById('year');
+    view.ui.add(inputDiv, "top-right");
+    view.ui.add(domYear);
 });
 // view.on("pointer-move", function(event){
 //     console.log(event)

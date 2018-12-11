@@ -4,29 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no"/>
     <title>ComposerMap</title>
-    <style>
-        html, body {
-            padding: 0;
-            margin: 0;
-            height: 100%;
-            width: 100%;
-        }
-        #viewDiv {
-            padding: 0;
-            margin: 0;
-            height: 80vh;
-            width: 100%;
-            margin: 0 auto;
-            padding-top: 10vh;
-        }
-        #year {
-            position: absolute;
-            left: 50%;
-            -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-            font-size: 2rem;
-        }
-    </style>
+    <link rel="stylesheet" href="./main.css">
     <link rel="stylesheet" href="https://js.arcgis.com/4.9/esri/css/main.css">
     <link rel="stylesheet" href="https://js.arcgis.com/4.9/esri/themes/dark/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
@@ -46,10 +24,10 @@
     <script src="https://js.arcgis.com/4.9"></script>
   </head>
   <body>
-      <!-- <header class="scroll"> -->
-            <input type="range" id="test5" min="1450" max="2000" oninput="year.value = test5.value" />
-            <output id="year" name="year">1725</output>
-      <!-- </header> -->
+    <output id="year" name="year">1390</output>
+    <div class="input-div">
+      <input type="range" id="test5" min="1390" max="2000" value="1390" oninput="year.value = test5.value" />
+    </div>
     <div id="viewDiv"></div>
     <script>require(["app/main"]);</script>
   </body>
