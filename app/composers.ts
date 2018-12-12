@@ -3,7 +3,7 @@ let composers = [
         name: "duFay",
         birth: 1397,
         death: 1474,
-        url: "https://i.imgur.com/3CUpvSQ.jpg",
+        url: "https://i.imgur.com/40eBzRI.png",
         coordinates: {
             longitude: 4.3517,
             latitude: 50.8503
@@ -16,7 +16,7 @@ let composers = [
         name: "dunstaple",
         birth: 1390,
         death: 1453,
-        url: "https://i.imgur.com/vMj1AhY.jpg?1",
+        url: "https://i.imgur.com/uaXMran.png",
         coordinates: {
             longitude: 0.1357,
             latitude: 51.4975
@@ -29,7 +29,7 @@ let composers = [
         name: "josquin",
         birth: 1450,
         death: 1521,
-        url: "https://i.imgur.com/xFLKVGI.jpg",
+        url: "https://i.imgur.com/mnduALO.png",
         coordinates: {
             longitude: 4.0621,
             latitude: 50.5257
@@ -42,7 +42,7 @@ let composers = [
         name: "byrd",
         birth: 1539,
         death: 1623,
-        url: "https://i.imgur.com/es7RrXK.jpg",
+        url: "https://i.imgur.com/YinSaRf.png",
         coordinates: {
             longitude: -0.4278,
             latitude: 51.5074
@@ -55,7 +55,7 @@ let composers = [
         name: "palestrina",
         birth: 1525,
         death: 1594,
-        url: "https://i.imgur.com/7g3CEfI.jpg",
+        url: "https://i.imgur.com/Wm7Ud5w.png",
         coordinates: {
             longitude: 12.8887,
             latitude: 41.8383
@@ -68,7 +68,7 @@ let composers = [
         name: "lassus",
         birth: 1532,
         death: 1594,
-        url: "https://i.imgur.com/liq7FG1.jpg",
+        url: "https://i.imgur.com/5jYd4oj.png",
         coordinates: {
             longitude: 3.9567,
             latitude: 50.4542
@@ -81,7 +81,7 @@ let composers = [
         name: "gabrieli",
         birth: 1554,
         death: 1612,
-        url: "https://i.imgur.com/mPEu5DY.jpg?1",
+        url: "https://i.imgur.com/FJGA2J8.png",
         coordinates: {
             longitude: 12.3155,
             latitude: 45.4408
@@ -94,7 +94,7 @@ let composers = [
         name: "dowland",
         birth: 1563,
         death: 1626,
-        url: "https://i.imgur.com/Iybfzct.jpg",
+        url: "https://i.imgur.com/lKagHqO.png",
         coordinates: {
             longitude: 0.3278,
             latitude: 51.5074
@@ -107,7 +107,7 @@ let composers = [
         name: "purcell",
         birth: 1659,
         death: 1695,
-        url: "https://i.imgur.com/cLSPqMw.jpg",
+        url: "https://i.imgur.com/lkaBZUG.png",
         coordinates: {
             longitude: 0.1357,
             latitude: 51.4975
@@ -120,7 +120,7 @@ let composers = [
         name: "monteverdi",
         birth: 1567,
         death: 1643,
-        url: "https://i.imgur.com/FcDnpoQ.jpg",
+        url: "https://i.imgur.com/ItaJtij.png",
         coordinates: {
             longitude: 10.0227,
             latitude: 45.1332
@@ -133,7 +133,7 @@ let composers = [
         name: "vivaldi",
         birth: 1678,
         death: 1741,
-        url: "https://i.imgur.com/eiWjRJ6.jpg",
+        url: "https://i.imgur.com/kvlbpU3.png",
         coordinates: {
             longitude: 12.3155,
             latitude: 45.4408
@@ -146,7 +146,7 @@ let composers = [
         name: "couperin",
         birth: 1668,
         death: 1733,
-        url: "https://i.imgur.com/JvHJWNa.jpg",
+        url: "https://i.imgur.com/vJDhyXC.png",
         coordinates: {
             longitude: 2.3522,
             latitude: 48.8566
@@ -159,7 +159,7 @@ let composers = [
         name: "albinoni",
         birth: 1671,
         death: 1751,
-        url: "https://i.imgur.com/YkKO4SF.jpg",
+        url: "https://i.imgur.com/Kxt8UZm.png",
         coordinates: {
             longitude: 12.3155,
             latitude: 45.4408
@@ -172,7 +172,7 @@ let composers = [
         name: "telemann",
         birth: 1681,
         death: 1767,
-        url: "https://i.imgur.com/fj3Bpub.jpg",
+        url: "https://i.imgur.com/2kIShhC.png",
         coordinates: {
             longitude: 11.6276,
             latitude: 52.1205
@@ -185,7 +185,7 @@ let composers = [
         name: "bach",
         birth: 1685,
         death: 1750,
-        url: "https://i.imgur.com/WOe4Dto.jpg",
+        url: "https://i.imgur.com/AOHp6Qt.png",
         coordinates: {
             longitude: 10.3147,
             latitude: 50.9796
@@ -198,7 +198,7 @@ let composers = [
         name: "scarlatti",
         birth: 1685,
         death: 1757,
-        url: "https://i.imgur.com/kMhmFcc.jpg",
+        url: "https://i.imgur.com/yxwn3mE.png",
         coordinates: {
             longitude: 14.2681,
             latitude: 40.8518
@@ -211,7 +211,7 @@ let composers = [
         name: "handel",
         birth: 1685,
         death: 1759,
-        url: "https://i.imgur.com/l6frukP.png",
+        url: "https://i.imgur.com/wuR9Uvb.png",
         coordinates: {
             longitude: 11.9688,
             latitude: 51.4970
@@ -224,7 +224,7 @@ let composers = [
         name: "beethoven",
         birth: 1770,
         death: 1827,
-        url: "https://i.imgur.com/WjOGtt6.png",
+        url: "https://i.imgur.com/CzuvuUB.png",
         coordinates: {
             longitude: 7.104469222936351,
             latitude: 50.736576630668395
@@ -237,7 +237,7 @@ let composers = [
         name: "haydn",
         birth: 1732,
         death: 1809,
-        url: "https://i.imgur.com/TMJAuLB.jpg",
+        url: "https://i.imgur.com/uRY4P3d.png",
         coordinates: {
             longitude: 16.8589,
             latitude: 48.0656
@@ -250,7 +250,7 @@ let composers = [
         name: "mozart",
         birth: 1756,
         death: 1791,
-        url: "https://i.imgur.com/ysrVQLo.jpg",
+        url: "https://i.imgur.com/pCaNEzz.png",
         coordinates: {
             longitude: 13.0550,
             latitude: 47.8095
@@ -263,7 +263,7 @@ let composers = [
         name: "salieri",
         birth: 1750,
         death: 1825,
-        url: "https://i.imgur.com/Tt77SAc.jpg",
+        url: "https://i.imgur.com/8cInoGd.png",
         coordinates: {
             longitude: 11.3032,
             latitude: 45.1936
@@ -276,7 +276,7 @@ let composers = [
         name: "vonWeber",
         birth: 1786,
         death: 1826,
-        url: "https://i.imgur.com/BAdxWJB.jpg",
+        url: "https://i.imgur.com/MCmdGRp.png",
         coordinates: {
             longitude: 10.6095,
             latitude: 54.1330
@@ -289,7 +289,7 @@ let composers = [
         name: "schubert",
         birth: 1797,
         death: 1828,
-        url: "https://i.imgur.com/LFbwZoP.jpg",
+        url: "https://i.imgur.com/u5qnikQ.png",
         coordinates: {
             longitude: 16.3524,
             latitude: 48.2266
@@ -302,7 +302,7 @@ let composers = [
         name: "berlioz",
         birth: 1803,
         death: 1869,
-        url: "https://i.imgur.com/Lc466V3.jpg",
+        url: "https://i.imgur.com/atfcCBo.png",
         coordinates: {
             longitude: 5.2600,
             latitude: 45.3938
@@ -315,7 +315,7 @@ let composers = [
         name: "chopin",
         birth: 1810,
         death: 1849,
-        url: "https://i.imgur.com/VKavVnU.jpg",
+        url: "https://i.imgur.com/PSkUJRd.png",
         coordinates: {
             longitude: 20.3249,
             latitude: 52.2574
@@ -328,7 +328,7 @@ let composers = [
         name: "liszt",
         birth: 1811,
         death: 1886,
-        url: "https://i.imgur.com/gdX8VaD.png",
+        url: "https://i.imgur.com/nDeLYBz.png",
         coordinates: {
             longitude: 16.5311,
             latitude: 47.5653
@@ -341,7 +341,7 @@ let composers = [
         name: "mendelssohn",
         birth: 1809,
         death: 1847,
-        url: "https://i.imgur.com/g4NELR0.jpg",
+        url: "https://i.imgur.com/tbivf4W.png",
         coordinates: {
             longitude: 9.9937,
             latitude: 53.5511
@@ -354,7 +354,7 @@ let composers = [
         name: "brahms",
         birth: 1833,
         death: 1897,
-        url: "https://i.imgur.com/dtaPoWo.jpg",
+        url: "https://i.imgur.com/1CNdSwu.png",
         coordinates: {
             longitude: 9.9937,
             latitude: 53.5511
@@ -367,7 +367,7 @@ let composers = [
         name: "grieg",
         birth: 1843,
         death: 1907,
-        url: "https://i.imgur.com/UPRtAbf.jpg",
+        url: "https://i.imgur.com/eGcxAEa.png",
         coordinates: {
             longitude: 5.3221,
             latitude: 60.3913
@@ -380,7 +380,7 @@ let composers = [
         name: "dvorak",
         birth: 1841,
         death: 1904,
-        url: "https://i.imgur.com/q7QkYUR.jpg",
+        url: "https://i.imgur.com/MaMOYEU.png",
         coordinates: {
             longitude: 14.2988,
             latitude: 50.2615
@@ -393,7 +393,7 @@ let composers = [
         name: "mussorgsky",
         birth: 1839,
         death: 1881,
-        url: "https://i.imgur.com/2mrJZ6C.jpg",
+        url: "https://i.imgur.com/VLXL6g5.png",
         coordinates: {
             longitude: 31.2825,
             latitude: 56.2811
@@ -406,7 +406,7 @@ let composers = [
         name: "bruckner",
         birth: 1824,
         death: 1896,
-        url: "https://i.imgur.com/NH9XDp3.jpg",
+        url: "https://i.imgur.com/fCijWKa.png",
         coordinates: {
             longitude: 14.2913,
             latitude: 48.2077
@@ -419,7 +419,7 @@ let composers = [
         name: "tchaikovsky",
         birth: 1840,
         death: 1893,
-        url: "https://i.imgur.com/AjyiFbl.jpg",
+        url: "https://i.imgur.com/InFzWpv.png",
         coordinates: {
             longitude: 53.9769,
             latitude: 57.0409
@@ -432,7 +432,7 @@ let composers = [
         name: "puccini",
         birth: 1858,
         death: 1924,
-        url: "https://i.imgur.com/CcPAFvs.jpg",
+        url: "https://i.imgur.com/Pqgm1i2.png",
         coordinates: {
             longitude: 10.5027,
             latitude: 43.8429
@@ -445,7 +445,7 @@ let composers = [
         name: "saintSaëans",
         birth: 1835,
         death: 1921,
-        url: "https://i.imgur.com/2XBAaUc.jpg",
+        url: "https://i.imgur.com/DVhvkzu.png",
         coordinates: {
             longitude: 2.3522,
             latitude: 48.8566
@@ -458,7 +458,7 @@ let composers = [
         name: "strauss",
         birth: 1864,
         death: 1949,
-        url: "https://i.imgur.com/l7QzLRB.jpg",
+        url: "https://i.imgur.com/GXW5eDL.png",
         coordinates: {
             longitude: 11.5820,
             latitude: 48.1351
@@ -471,7 +471,7 @@ let composers = [
         name: "mahler",
         birth: 1860,
         death: 1911,
-        url: "https://i.imgur.com/1Vxqtm3.jpg",
+        url: "https://i.imgur.com/sjVf3Vl.png",
         coordinates: {
             longitude: 15.3041,
             latitude: 49.5926
@@ -484,7 +484,7 @@ let composers = [
         name: "debussy",
         birth: 1862,
         death: 1918,
-        url: "https://i.imgur.com/nkPhHSq.jpg",
+        url: "https://i.imgur.com/XZ41ovV.png",
         coordinates: {
             longitude: 2.0938,
             latitude: 48.8989
@@ -497,7 +497,7 @@ let composers = [
         name: "rachmaninoff",
         birth: 1873,
         death: 1943,
-        url: "https://i.imgur.com/WJL8Ran.jpg",
+        url: "https://i.imgur.com/SaJABrE.png",
         coordinates: {
             longitude: 31.4013,
             latitude: 57.9124
@@ -510,7 +510,7 @@ let composers = [
         name: "sibelius",
         birth: 1865,
         death: 1957,
-        url: "https://i.imgur.com/hcmJmyO.jpg",
+        url: "https://i.imgur.com/7uT2DIa.png",
         coordinates: {
             longitude: 24.4590,
             latitude: 60.9929
@@ -518,18 +518,148 @@ let composers = [
         popupTitle: 'Jean Sibelius (1865 – 1957)',
         popupContent: `Composer of orchestral, chamber and vocal music <br> Born in Hämeenlinna <br> Died in Ainola <br> Composition | <a href="https://www.youtube.com/watch?v=F5zg_af9b8c" target="_blank">Finlandia</a>`,
         isDisplaying: false
-    }
+    },
     {
         name: "schoenberg",
         birth: 1874,
         death: 1951,
-        url: "https://i.imgur.com/ZafyPBj.jpg",
+        url: "https://i.imgur.com/jqZoxwx.png",
         coordinates: {
             longitude: 16.3738,
             latitude: 48.2082
         },
         popupTitle: 'Arnold Schoenberg (1874 – 1951)',
-        popupContent: `Composer of orchestral, chamber, piano and vocal music <br> Born in Vienna <br> Died in Los Angeles <br> Composition | <a href="https://www.youtube.com/watch?v=FXhAtBT57zA" target="_blank">Gurre-Lieder</a>`,
+        popupContent: `Composer of orchestral, chamber, piano and vocal music <br> Born in Vienna <br> Died in Los Angeles <br> Composition | <a href="https://www.youtube.com/watch?v=-WsqK1mCGeY" target="_blank">Gurre-Lieder</a>`,
+        isDisplaying: false
+    },
+    {
+        name: "stravinsky",
+        birth: 1882,
+        death: 1971,
+        url: "https://i.imgur.com/gID0Xfg.png",
+        coordinates: {
+            longitude: 29.7544,
+            latitude: 59.9153
+        },
+        popupTitle: 'Igor Stravinsky (1882 – 1971)',
+        popupContent: `Composer of ballet, orchestral, operatic, incidental, choral and chamber music <br> Born in Oranienbaum (a suburb of St. Petersburg) <br> Died in New York <br> Composition | <a href="https://www.youtube.com/watch?v=FXhAtBT57zA" target="_blank">Firebird, Finale</a>`,
+        isDisplaying: false
+    },
+    {
+        name: "bartok",
+        birth: 1881,
+        death: 1945,
+        url: "https://i.imgur.com/YIpmGs5.png",
+        coordinates: {
+            longitude: 20.6225,
+            latitude: 46.0593
+        },
+        popupTitle: 'Béla Bartók (1881 – 1945)',
+        popupContent: `Composer of orchestral, operatic, piano, choral and chamber music <br> Born in Nagyszentmiklós (now Sânnicolau Mare Romania) <br> Died in New York <br> Composition | <a href="https://www.youtube.com/watch?v=4HAIHSqiwAA" target="_blank">Romanian Folk Dances</a>`,
+        isDisplaying: false
+    },
+    {
+        name: "ravel",
+        birth: 1875,
+        death: 1937,
+        url: "https://i.imgur.com/rFTahiO.png",
+        coordinates: {
+            longitude: 1.6754,
+            latitude: 43.3875
+        },
+        popupTitle: 'Maurice Ravel (1875 – 1937)',
+        popupContent: `Composer of piano, orchestral, operatic and chamber music <br> Born in Ciboure (near Biarritz) <br> Died in Paris <br> Composition | <a href="https://www.youtube.com/watch?v=2uDiT3uBDQU" target="_blank">Daybreak (from Daphnis et Chloe)</a>`,
+        isDisplaying: false
+    },
+    {
+        name: "shostakovich",
+        birth: 1906,
+        death: 1975,
+        url: "https://i.imgur.com/2UDd3Bi.png",
+        coordinates: {
+            longitude: 30.3351,
+            latitude: 59.9343
+        },
+        popupTitle: 'Dmitri Shostakovich (1906 – 1975)',
+        popupContent: `Composer of symphonic, orchestral, operatic, piano, choral, chamber and film music <br> Born in St. Petersburg <br> Died in Moscow <br> Composition | <a href="https://www.youtube.com/watch?v=T1h1NJMKtnc" target="_blank">Symphony No. 5, Finale</a>`,
+        isDisplaying: false
+    },
+    {
+        name: "prokofiev",
+        birth: 1891,
+        death: 1953,
+        url: "https://i.imgur.com/YRjC7KG.png",
+        coordinates: {
+            longitude: 37.1907,
+            latitude: 48.0468
+        },
+        popupTitle: 'Sergei Prokofiev (1906 – 1975)',
+        popupContent: `Composer of orchestral, symphonic, operatic, piano, choral, chamber and film music <br> Born in Sontsivka <br> Died in Moscow <br> Composition | <a href="https://www.youtube.com/watch?v=5QsRDpsItq0" target="_blank">Troika (from Lieutenant Kijé)</a>`,
+        isDisplaying: false
+    },
+    {
+        name: "britten",
+        birth: 1913,
+        death: 1976,
+        url: "https://i.imgur.com/dNCwHEp.png",
+        coordinates: {
+            longitude: 1.7534,
+            latitude: 52.4811
+        },
+        popupTitle: 'Benjamin Britten (1913 – 1976)',
+        popupContent: `Composer of operatic, orchestral, chamber and vocal music <br> Born in Lowestoft <br> Died in Aldeburgh <br> Composition | <a href="https://www.youtube.com/watch?v=kmocmreevF8" target="_blank">A Hymn to the Virgin</a>`,
+        isDisplaying: false
+    },
+    {
+        name: "webern",
+        birth: 1883,
+        death: 1945,
+        url: "https://i.imgur.com/GOo0auz.png",
+        coordinates: {
+            longitude: 16.3738,
+            latitude: 48.2082
+        },
+        popupTitle: 'Anton Webern (1883 – 1945)',
+        popupContent: `Composer of chamber, orchestral, piano and vocal music <br> Born in Vienna <br> Died in Mittersill <br> Composition | <a href="https://www.youtube.com/watch?v=9VMIhkU_XpQ" target="_blank">Passacaglia Op. 1</a>`,
+        isDisplaying: false
+    },
+    {
+        name: "messiaen",
+        birth: 1908,
+        death: 1992,
+        url: "https://i.imgur.com/cehnNlC.png",
+        coordinates: {
+            longitude: 4.8055,
+            latitude: 43.9493
+        },
+        popupTitle: 'Olivier Messiaen (1908 – 1992)',
+        popupContent: `Composer of chamber, orchestral, organ, piano and choral music <br> Born in Avignon <br> Died in Clichy <br> Composition | <a href="https://www.youtube.com/watch?v=pJsG02KIcLM" target="_blank">Quartet for the End of Time, Praise to the Eternity of Jesus</a>`,
+        isDisplaying: false
+    },
+    {
+        name: "berg",
+        birth: 1885,
+        death: 1935,
+        url: "https://i.imgur.com/7Vg2cOz.png",
+        coordinates: {
+            longitude: 16.3738,
+            latitude: 48.2082
+        },
+        popupTitle: 'Alban Berg (1885 – 1935)',
+        popupContent: `Composer of operatic, vocal, chamber, orchestral and piano works <br> Born in Vienna <br> Died in Vienna <br> Composition | <a href="https://www.youtube.com/watch?v=w8az7NBzQhQ" target="_blank">Violin Concerto, mvt. 2</a>`,
+        isDisplaying: false
+    },
+    {
+        name: "satie",
+        birth: 1866,
+        death: 1925,
+        url: "https://i.imgur.com/92n6aOZ.png",
+        coordinates: {
+            longitude: 0.2333,
+            latitude: 49.4188
+        },
+        popupTitle: 'Erik Satie (1866 – 1925)',
+        popupContent: `Composer of piano, orchestral, dramatic and vocal music <br> Born in Honfleur <br> Died in Arcueil <br> Composition | <a href="https://www.youtube.com/watch?v=eMnxjdGTK4w" target="_blank">Gymnopédie No. 1</a>`,
         isDisplaying: false
     }
     

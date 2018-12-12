@@ -28,6 +28,13 @@ window.setInterval(() => {
 
     let intYear = parseInt(year, 10);
 
+    // keep the view from zooming out too far
+    if (view.zoom < 3) {
+        setTimeout(function(){
+            view.zoom = 3;
+        }, 200);
+    }
+
     // create and place a graphic for each composer living at the specified year 
     composers.forEach(composer => {
         if (intYear >= composer.birth && intYear <= composer.death) {

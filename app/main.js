@@ -16,6 +16,12 @@ define(["require", "exports", "esri/Map", "esri/views/MapView", "esri/geometry/P
     window.setInterval(function () {
         year = document.getElementById('year').value;
         var intYear = parseInt(year, 10);
+        // keep the view from zooming out too far
+        if (view.zoom < 3) {
+            setTimeout(function () {
+                view.zoom = 3;
+            }, 200);
+        }
         // create and place a graphic for each composer living at the specified year 
         composers_1.default.forEach(function (composer) {
             if (intYear >= composer.birth && intYear <= composer.death) {

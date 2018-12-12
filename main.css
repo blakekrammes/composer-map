@@ -29,8 +29,10 @@ html, body {
     -webkit-text-fill-color: whitesmoke;
     -webkit-text-stroke-width: 1.5px;
     -webkit-text-stroke-color: black;
+    width: 100px;
 }
 
 div.input-div.esri-component {
-    box-shadow: none;
+    /* box-shadow: none; */
+    padding: 0 10px;
 }
