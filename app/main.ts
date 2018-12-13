@@ -153,7 +153,6 @@ function changeImgSize(res) {
                 console.log(graphicsLayer.graphics)
                 
                 
-
                 setTimeout(function(){
                     graphicsLayer.graphics.remove(window[composer.name+'enlargedGraphic']);
                     composer.isUpdatedGraphicDisplaying = false;
