@@ -4,9 +4,6 @@ import Point = require("esri/geometry/Point");
 import PictureMarkerSymbol = require("esri/symbols/PictureMarkerSymbol");
 import Graphic = require("esri/Graphic");
 import GraphicsLayer = require("esri/layers/GraphicsLayer");
-// import LayerView = require("esri/views/layers/LayerView");
-// import GraphicsLayerView = require("esri/views/layers/GraphicsLayerView");
-import FeatureLayer = require("esri/layers/FeatureLayer");
 import PopupTemplate = require("esri/PopupTemplate");
 import composers from './composers';
 
