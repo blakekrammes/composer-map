@@ -32,7 +32,6 @@ let youtubeLink:any;
 const graphicsLayer = new GraphicsLayer({}); 
 
 let year;
-let i:number = 1;
 
 window.setInterval(() => {
     year = (<HTMLOutputElement>document.getElementById('year')).value;
@@ -47,27 +46,20 @@ window.setInterval(() => {
 
             function clickCallback(e) {                
                 if (composer.popupContent.includes(e.target.innerHTML)) {
+                
                     fancyDiv.innerHTML = '<iframe id="youFrame" width="360" height="215" src=`${youtub}` frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
                     let youFrame = document.getElementById("youFrame");
                     youFrame.src = youtub;
-                    console.log(youFrame) 
                     view.ui.add(fancyDiv, "bottom-right");
                 }
             }
         
-            if (i === 1 && youtubeLink !== undefined) {
+            if (youtubeLink !== undefined) {
                 youtubeLink.addEventListener('click', clickCallback);
-                i = 2;
-            }
-            else if (youtubeLink !== undefined){
-                youtubeLink.removeEventListener('click', clickCallback);
-                i = 1;
             }
         }
     });
-    
-    
-
+     
     // keep the view from zooming out too far
     if (view.zoom < 3) {
         setTimeout(function(){

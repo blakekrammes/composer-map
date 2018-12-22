@@ -20,7 +20,6 @@ define(["require", "exports", "esri/Map", "esri/views/MapView", "esri/geometry/P
     var youtubeLink;
     var graphicsLayer = new GraphicsLayer({});
     var year;
-    var i = 1;
     window.setInterval(function () {
         year = document.getElementById('year').value;
         var intYear = parseInt(year, 10);
@@ -34,17 +33,11 @@ define(["require", "exports", "esri/Map", "esri/views/MapView", "esri/geometry/P
                         fancyDiv.innerHTML = '<iframe id="youFrame" width="360" height="215" src=`${youtub}` frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
                         var youFrame = document.getElementById("youFrame");
                         youFrame.src = youtub_1;
-                        console.log(youFrame);
                         view.ui.add(fancyDiv, "bottom-right");
                     }
                 }
-                if (i === 1 && youtubeLink !== undefined) {
+                if (youtubeLink !== undefined) {
                     youtubeLink.addEventListener('click', clickCallback);
-                    i = 2;
-                }
-                else if (youtubeLink !== undefined) {
-                    youtubeLink.removeEventListener('click', clickCallback);
-                    i = 1;
                 }
             }
         });
