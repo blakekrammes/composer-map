@@ -6,6 +6,7 @@ import Graphic = require("esri/Graphic");
 import GraphicsLayer = require("esri/layers/GraphicsLayer");
 import PopupTemplate = require("esri/PopupTemplate");
 import composers from './composers';
+import $ = require('jquery');
 
 // esri map
 const map = new EsriMap({
@@ -24,14 +25,48 @@ const view = new MapView({
     }
 });
 
+
+let fancyDiv:any;
+let youtubeLink:any;
+
 const graphicsLayer = new GraphicsLayer({}); 
 
 let year;
+let i:number = 1;
 
 window.setInterval(() => {
     year = (<HTMLOutputElement>document.getElementById('year')).value;
-
     let intYear = parseInt(year, 10);
+
+    fancyDiv = (<HTMLElement>document.getElementsByClassName('fancyDiv')[0]);
+    youtubeLink = (<HTMLElement>document.getElementsByClassName('youtubeLinkAlias')[0]);
+
+    composers.forEach(composer => {
+        if (intYear >= composer.birth && intYear <= composer.death) {
+            let youtub = composer.youtubeLink;
+
+            function clickCallback(e) {                
+                if (composer.popupContent.includes(e.target.innerHTML)) {
+                    fancyDiv.innerHTML = '<iframe id="youFrame" width="360" height="215" src=`${youtub}` frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+                    let youFrame = document.getElementById("youFrame");
+                    youFrame.src = youtub;
+                    console.log(youFrame) 
+                    view.ui.add(fancyDiv, "bottom-right");
+                }
+            }
+        
+            if (i === 1 && youtubeLink !== undefined) {
+                youtubeLink.addEventListener('click', clickCallback);
+                i = 2;
+            }
+            else if (youtubeLink !== undefined){
+                youtubeLink.removeEventListener('click', clickCallback);
+                i = 1;
+            }
+        }
+    });
+    
+    
 
     // keep the view from zooming out too far
     if (view.zoom < 3) {
@@ -100,79 +135,88 @@ function changeCursor(res:any) {
     }
 }
 
-// function changeImgSize(res) {
+function changeImgSize(res) {
 
-//     year = (<HTMLOutputElement>document.getElementById('year')).value;
+    year = (<HTMLOutputElement>document.getElementById('year')).value;
 
-//     let intYear = parseInt(year, 10);
+    let intYear = parseInt(year, 10);
 
-//     if (res.results.length > 0) {
-//         composers.forEach(composer => {
-//             if (intYear >= composer.birth && intYear <= composer.death) {
-//                 if (composer.isUpdatedGraphicDisplaying !== true
-//                     && res.results[0].graphic.geometry.latitude === composer.coordinates.latitude 
-//                     && res.results[0].graphic.geometry.longitude === composer.coordinates.longitude) {
+    if (res.results.length > 0) {
+        composers.forEach(composer => {
+            if (intYear >= composer.birth && intYear <= composer.death) {
+                if (composer.isUpdatedGraphicDisplaying !== true
+                    && res.results[0].graphic.geometry.latitude === composer.coordinates.latitude 
+                    && res.results[0].graphic.geometry.longitude === composer.coordinates.longitude) {
 
-//                     let updatedMarker = new PictureMarkerSymbol({
-//                         url: composer.url,
-//                         width: "50px",
-//                         height: "50px"
-//                     });
-//                     let point = new Point({
-//                         longitude: composer.coordinates.longitude,
-//                         latitude: composer.coordinates.latitude
-//                     });
-//                     let popupTemplate = new PopupTemplate({
-//                         title: composer.popupTitle,
-//                         content: composer.popupContent
-//                     });
-//                     window[composer.name+'enlargedGraphic'] = new Graphic({
-//                         geometry: point,
-//                         symbol: updatedMarker,
-//                         popupTemplate: popupTemplate
-//                     });
-//                     // add the new, hovered graphic to the view
-                
-//                     graphicsLayer.graphics.add(window[composer.name+'enlargedGraphic']);
-//                     composer.isUpdatedGraphicDisplaying = true;
+                    let updatedMarker = new PictureMarkerSymbol({
+                        url: composer.url,
+                        width: "50px",
+                        height: "50px"
+                    });
+                    let point = new Point({
+                        longitude: composer.coordinates.longitude,
+                        latitude: composer.coordinates.latitude
+                    });
+                    let popupTemplate = new PopupTemplate({
+                        title: composer.popupTitle,
+                        content: composer.popupContent
+                    });
+                    window[composer.name+'enlargedGraphic'] = new Graphic({
+                        geometry: point,
+                        symbol: updatedMarker,
+                        popupTemplate: popupTemplate
+                    });
+
+                    // when you're adding graphics, remove one before adding another
+                    let preexistingGraphics = graphicsLayer.graphics.filter(function(graphic){
+                        return graphic.popupTemplate.title === composer.popupTitle; 
+                    });
+
+                    if (preexistingGraphics.length > 1 && composer.isUpdatedGraphicDisplaying === false) {
+                        graphicsLayer.graphics.removeMany(preexistingGraphics);
+                    }
+
+                    // add the new, hovered graphic to the view
+                    if (preexistingGraphics.length === 1) {
+                        graphicsLayer.graphics.add(window[composer.name+'enlargedGraphic']);
+                        composer.isUpdatedGraphicDisplaying = true;
+                    }
                     
-//                     // remove the original graphic with a bit of delay for a smooth transition 
-//                     setTimeout(function(){
-//                         if (composer.isUpdatedGraphicDisplaying === true) {
-//                             graphicsLayer.graphics.remove(window[composer.name+'Graphic']);
-//                             composer.isDisplaying = false;
-//                         }
-//                     }, 250)
-                    
-//                 }
-//             }
-//         });
-//     }
-//     else {
-//         composers.forEach(composer => {
-//             if (intYear >= composer.birth && intYear <= composer.death && window[composer.name+'enlargedGraphic'] 
-//                 && composer.isUpdatedGraphicDisplaying !== false) {
-//                 console.log(graphicsLayer.graphics)
+                    // remove the original graphic with a bit of delay for a smooth transition 
+                    setTimeout(function() {
+                        if (preexistingGraphics.length === 1 && composer.isUpdatedGraphicDisplaying === true) {
+                            graphicsLayer.graphics.remove(window[composer.name+'Graphic']);
+                            composer.isDisplaying = false;
+                        }
+                    }, 250)                      
+                }
+            }
+        });
+    }
+    else {
+        composers.forEach(composer => {
+            if (intYear >= composer.birth && intYear <= composer.death && window[composer.name+'enlargedGraphic'] 
+                && composer.isUpdatedGraphicDisplaying !== false) {
+                
+                let preexistingGraphics = graphicsLayer.graphics.filter(function(graphic){
+                    return graphic.popupTemplate.title === composer.popupTitle; 
+                });
+                
+                setTimeout(function(){
+                    if (preexistingGraphics.length === 1) {
+                        graphicsLayer.graphics.remove(window[composer.name+'enlargedGraphic']);
+                        composer.isUpdatedGraphicDisplaying = false;
+                    }
+                }, 25);
 
-//                 composer.isUpdatedGraphicDisplaying = false;
-//                 setTimeout(function(){
-//                     graphicsLayer.graphics.remove(window[composer.name+'enlargedGraphic']);
-//                 }, 30);
-//                 // setTimeout(function() {
-//                 if (window[composer.name+'Graphic']) {}
-//                 // if (composer.isUpdatedGraphicDisplaying === false) {
-//                     else {
-//                     graphicsLayer.graphics.add(window[composer.name+'Graphic']);
-//                     composer.isDisplaying = true;
-//                     }
-                
-                    
-//                 // },1)
-                
-//             }
-//         });
-//     }
-// }
+                if (preexistingGraphics.length === 1) {
+                    graphicsLayer.graphics.add(window[composer.name+'Graphic']);
+                    composer.isDisplaying = true;
+                }                                   
+            }
+        });
+    }
+}
 
 view.on("pointer-move", function(event){
 
@@ -184,7 +228,7 @@ view.on("pointer-move", function(event){
     view.hitTest(screenPoint)
         .then(function(response) {
             changeCursor(response);
-            // changeImgSize(response);
+            changeImgSize(response);
         });
   });
 

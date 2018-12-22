@@ -1,3 +1,5 @@
+// import 'fancybox'; 
+
 let composers = [
     {
         name: "duFay",
@@ -9,7 +11,8 @@ let composers = [
             latitude: 50.8503
         },
         popupTitle: "Guillaume Du Fay (1397 – 1474)",
-        popupContent: `Composer of masses, motets and secular songs <br> Born in Brussels <br> Died in Cambrai <br> Composition | <a href="https://www.youtube.com/watch?v=_dV5b8AuLHg" target="_blank">Nuper Rosarum Flores</a>`,
+        popupContent: `Composer of masses, motets and secular songs <br> Born in Brussels <br> Died in Cambrai <br> Composition | <a class="youtubeLinkAlias" href="javascript:void(0)">Nuper rosarum flores</a>`,
+        youtubeLink: 'https://www.youtube.com/embed/_dV5b8AuLHg?&autoplay=1;',
         isDisplaying: false,
         isUpdatedGraphicDisplaying: false
     },
@@ -23,7 +26,8 @@ let composers = [
             latitude: 51.4975
         },
         popupTitle: "John Dunstaple (c. 1390 – 1453)",
-        popupContent: `Composer of sacred polyphonic music <br> Born in Dunstable <br> Died in London <br> Composition | <a href="https://www.youtube.com/watch?v=NPYmHyv1KeE" target="_blank">Veni Creator Spiritus</a>`,
+        popupContent: `Composer of sacred polyphonic music <br> Born in Dunstable <br> Died in London <br> Composition | <a class="youtubeLinkAlias" href="javascript:void(0)">Veni Creator Spiritus</a>`,
+        youtubeLink: 'https://www.youtube.com/embed/NPYmHyv1KeE?&autoplay=1;',
         isDisplaying: false,
         isUpdatedGraphicDisplaying: false
     },
@@ -37,7 +41,8 @@ let composers = [
             latitude: 50.5257
         },
         popupTitle: "Josquin des Prez (c. 1450/1455 – 1521)",
-        popupContent: `Composer of Renaissance polyphonic vocal music <br> Born in either Hainaut (modern-day Belgium) or modern-day France <br> Died in Condé-sur-l'Escaut <br> Composition | <a href="https://www.youtube.com/watch?v=LUAgAF4Khmg" target="_blank">Ave Maria</a>`,
+        popupContent: `Composer of Renaissance polyphonic vocal music <br> Born in either Hainaut (modern-day Belgium) or modern-day France <br> Died in Condé-sur-l'Escaut <br> Composition | <a class="youtubeLinkAlias" href="javascript:void(0)">Ave Maria</a>`,
+        youtubeLink: 'https://www.youtube.com/embed/LUAgAF4Khmg?&autoplay=1;',
         isDisplaying: false,
         isUpdatedGraphicDisplaying: false
     },
@@ -51,7 +56,8 @@ let composers = [
             latitude: 51.5074
         },
         popupTitle: "William Byrd (c.1539/40 or 1543 – 1623)",
-        popupContent: `Composer of sacred and secular polyphonic music <br> Born in London <br> Died in Stondon Massey <br> Composition | <a href="https://www.youtube.com/watch?v=Z2ckGcpx6xI" target="_blank">Ave Verum Corpus</a>`,
+        popupContent: `Composer of sacred and secular polyphonic music <br> Born in London <br> Died in Stondon Massey <br> Composition | <a class="youtubeLinkAlias" href="javascript:void(0)">Agnus Dei</a>`,
+        youtubeLink: 'https://www.youtube.com/embed/4qlgQoVshf4?&autoplay=1;',
         isDisplaying: false,
         isUpdatedGraphicDisplaying: false
     },
@@ -65,7 +71,8 @@ let composers = [
             latitude: 41.8383
         },
         popupTitle: "Giovanni Pierluigi da Palestrina (c. 1525 – 1594)",
-        popupContent: `Composer of sacred polyphonic vocal music <br> Born in Palestrina <br> Died in Rome <br> Composition | <a href="https://www.youtube.com/watch?v=EJj0as_Mic4" target="_blank">Missa Papae Marcelli, Kyrie</a>`,
+        popupContent: `Composer of sacred polyphonic vocal music <br> Born in Palestrina <br> Died in Rome <br> Composition | <a class="youtubeLinkAlias" href="javascript:void(0)">Missa Papae Marcelli, Kyrie</a>`,
+        youtubeLink: 'https://www.youtube.com/embed/3n8XdKkrqgo?&autoplay=1',
         isDisplaying: false,
         isUpdatedGraphicDisplaying: false
     },
@@ -79,7 +86,8 @@ let composers = [
             latitude: 50.4542
         },
         popupTitle: 'Orlande de Lassus (1532, possibly 1530 – 1594)',
-        popupContent: `Composer of sacred and secular polyphonic works <br> Born in Mons (modern-day Belgium) <br> Died in Munich <br> Composition | <a href="https://www.youtube.com/watch?v=UQN6gFnsGI4" target="_blank">La Nuict Froide et Sombre</a>`,
+        popupContent: `Composer of sacred and secular polyphonic works <br> Born in Mons (modern-day Belgium) <br> Died in Munich <br> Composition | <a class="youtubeLinkAlias" href="javascript:void(0)">La Nuict Froide et Sombre</a>`,
+        youtubeLink: 'https://www.youtube.com/embed/UQN6gFnsGI4?&autoplay=1;',
         isDisplaying: false,
         isUpdatedGraphicDisplaying: false
     },
@@ -93,7 +101,8 @@ let composers = [
             latitude: 45.4408
         },
         popupTitle: 'Giovanni Gabrieli (c. 1554/1557 – 1612)',
-        popupContent: `Composer of sacred vocal and instrumental music <br> Born in Venice <br> Died in Venice <br> Composition | <a href="https://www.youtube.com/watch?v=DP8zh3-4qrU" target="_blank">Suscipe</a>`,
+        popupContent: `Composer of sacred vocal and instrumental music <br> Born in Venice <br> Died in Venice <br> Composition | <a class="youtubeLinkAlias" href="javascript:void(0)">Suscipe</a>`,
+        youtubeLink: 'https://www.youtube.com/embed/DP8zh3-4qrU?&autoplay=1;',
         isDisplaying: false,
         isUpdatedGraphicDisplaying: false
     },
@@ -107,7 +116,8 @@ let composers = [
             latitude: 51.5074
         },
         popupTitle: 'John Dowland (1563 – 1626)',
-        popupContent: 'Composer of songs and music for lute <br> Born in London <br> Died in London <br> Composition | <a href="https://www.youtube.com/watch?v=Y9HKl8H0PWg" target="_blank">Flow My Tears</a>',
+        popupContent: 'Composer of songs and music for lute <br> Born in London <br> Died in London <br> Composition | <a class="youtubeLinkAlias" href="javascript:void(0)">Flow My Tears</a>',
+        youtubeLink: 'https://www.youtube.com/embed/Y9HKl8H0PWg?&autoplay=1;',
         isDisplaying: false,
         isUpdatedGraphicDisplaying: false
     },
@@ -121,7 +131,8 @@ let composers = [
             latitude: 51.4975
         },
         popupTitle: 'Henry Purcell (1659 – 1695)',
-        popupContent: `Composer of opera, sacred, and incidental music <br> Born in London <br> Died in London <br> Composition | <a href="https://www.youtube.com/watch?v=S9xwlWfHWv4" target="_blank">Dido's Lament</a>`,
+        popupContent: `Composer of opera, sacred, and incidental music <br> Born in London <br> Died in London <br> Composition | <a class="youtubeLinkAlias" href="javascript:void(0)">Dido's Lament</a>`,
+        youtubeLink: 'https://www.youtube.com/embed/ou8A0g_jYyA?&autoplay=1;',
         isDisplaying: false,
         isUpdatedGraphicDisplaying: false
     },
@@ -135,7 +146,8 @@ let composers = [
             latitude: 45.1332
         },
         popupTitle: 'Claudio Monteverdi (1567 – 1643)',
-        popupContent: `Composer of opera, sacred, and secular music <br> Born in Cremona <br> Died in Venice <br> Composition | <a href="https://www.youtube.com/watch?v=zsL4MGFh6QI" target="_blank">Lamento della Ninfa</a>`,
+        popupContent: `Composer of opera, sacred, and secular music <br> Born in Cremona <br> Died in Venice <br> Composition | <a class="youtubeLinkAlias" href="javascript:void(0)">Lamento della Ninfa</a>`,
+        youtubeLink: 'https://www.youtube.com/embed/zsL4MGFh6QI?&autoplay=1;',
         isDisplaying: false,
         isUpdatedGraphicDisplaying: false
     },
@@ -149,7 +161,8 @@ let composers = [
             latitude: 45.4408
         },
         popupTitle: 'Antonio Vivaldi (1678 – 1741)',
-        popupContent: `Composer of concertos, choral, and operatic music <br> Born in Venice <br> Died in Vienna <br> Composition | <a href="https://www.youtube.com/watch?v=QPba-i26YNA" target="_blank">Violin Concerto in A Minor RV356</a>`,
+        popupContent: `Composer of concertos, choral, and operatic music <br> Born in Venice <br> Died in Vienna <br> Composition | <a class="youtubeLinkAlias" href="javascript:void(0)">Violin Concerto in A Minor RV356</a>`,
+        youtubeLink: 'https://www.youtube.com/embed/QPba-i26YNA?&autoplay=1;',
         isDisplaying: false,
         isUpdatedGraphicDisplaying: false
     },
@@ -163,7 +176,8 @@ let composers = [
             latitude: 48.8566
         },
         popupTitle: 'François Couperin (1668 – 1733)',
-        popupContent: `Composer of harpsichord and vocal music <br> Born in Paris <br> Died in Paris <br> Composition | <a href="https://www.youtube.com/watch?v=R2mGjvrGbcE" target="_blank">Les Baricades Mistérieuses</a>`,
+        popupContent: `Composer of harpsichord and vocal music <br> Born in Paris <br> Died in Paris <br> Composition | <a class="youtubeLinkAlias" href="javascript:void(0)">Les Baricades Mistérieuses</a>`,
+        youtubeLink: 'https://www.youtube.com/embed/R2mGjvrGbcE?&autoplay=1;',
         isDisplaying: false,
         isUpdatedGraphicDisplaying: false
     },
@@ -177,7 +191,8 @@ let composers = [
             latitude: 45.4408
         },
         popupTitle: 'Tomaso Albinoni (1671 – 1751)',
-        popupContent: `Composer of instrumental and operatic music <br> Born in Venice <br> Died in Venice <br> Composition | <a href="https://www.youtube.com/watch?v=LjgndGuy77o" target="_blank">Oboe Concerto #2 in D Minor Op. 9</a>`,
+        popupContent: `Composer of instrumental and operatic music <br> Born in Venice <br> Died in Venice <br> Composition | <a class="youtubeLinkAlias" href="javascript:void(0)">Oboe Concerto #2 in D Minor Op. 9</a>`,
+        youtubeLink: 'https://www.youtube.com/embed/LjgndGuy77o?&autoplay=1;',
         isDisplaying: false,
         isUpdatedGraphicDisplaying: false
     },
@@ -191,7 +206,8 @@ let composers = [
             latitude: 52.1205
         },
         popupTitle: 'Georg Philipp Telemann (1681 – 1767)',
-        popupContent: `Composer of concertos, operas, orchestral and keyboard music <br> Born in Magdeburg <br> Died in Hamburg <br> Composition | <a href="https://www.youtube.com/watch?v=ZySASwzVDR0" target="_blank">Suite in A major</a>`,
+        popupContent: `Composer of concertos, operas, orchestral and keyboard music <br> Born in Magdeburg <br> Died in Hamburg <br> Composition | <a class="youtubeLinkAlias" href="javascript:void(0)">Suite in A major</a>`,
+        youtubeLink: 'https://www.youtube.com/embed/ZySASwzVDR0?&autoplay=1;',
         isDisplaying: false,
         isUpdatedGraphicDisplaying: false
     },
@@ -205,7 +221,8 @@ let composers = [
             latitude: 50.9796
         },
         popupTitle: 'Johann Sebastian Bach (1685 – 1750)',
-        popupContent: `Composer of contrapuntal sacred music and keyboard music <br> Born in Eisenach <br> Died in Leipzig <br> Composition | <a href="https://www.youtube.com/watch?v=5Belbi3tSQw" target="_blank">Mass in B minor - Gratias</a>`,
+        popupContent: `Composer of contrapuntal sacred music and keyboard music <br> Born in Eisenach <br> Died in Leipzig <br> Composition | <a class="youtubeLinkAlias" href="javascript:void(0)">Mass in B minor - Gratias</a>`,
+        youtubeLink: 'https://www.youtube.com/embed/5Belbi3tSQw?&autoplay=1;',
         isDisplaying: false,
         isUpdatedGraphicDisplaying: false
     },
@@ -219,7 +236,8 @@ let composers = [
             latitude: 40.8518
         },
         popupTitle: 'Domenico Scarlatti (1685 – 1757)',
-        popupContent: `Composer of keyboard sonatas <br> Born in Naples <br> Died in Madrid <br> Composition | <a href="https://www.youtube.com/watch?v=wjghYFgt8Zk" target="_blank">Sonata in D minor K141</a>`,
+        popupContent: `Composer of keyboard sonatas <br> Born in Naples <br> Died in Madrid <br> Composition | <a class="youtubeLinkAlias" href="javascript:void(0)">Sonata in D minor K141</a>`,
+        youtubeLink: 'https://www.youtube.com/embed/wjghYFgt8Zk?&autoplay=1;',
         isDisplaying: false,
         isUpdatedGraphicDisplaying: false
     },
@@ -233,7 +251,8 @@ let composers = [
             latitude: 51.4970
         },
         popupTitle: 'George Frideric Handel (1685 – 1759)',
-        popupContent: `Composer of operas, oratorios, <br> Born in Halle-upon-Saale <br> Died in London <br> Composition | <a href="https://www.youtube.com/watch?v=MiXgOQ9_-RI" target="_blank">Zadok the Priest</a>`,
+        popupContent: `Composer of operas, oratorios, <br> Born in Halle-upon-Saale <br> Died in London <br> Composition | <a class="youtubeLinkAlias" href="javascript:void(0)">Zadok the Priest</a>`,
+        youtubeLink: 'https://www.youtube.com/embed/3kucFS9Gafk?&autoplay=1;',
         isDisplaying: false,
         isUpdatedGraphicDisplaying: false
     },
@@ -247,7 +266,8 @@ let composers = [
             latitude: 50.736576630668395
         },
         popupTitle: 'Ludwig van Beethoven (1770 – 1827)',
-        popupContent: `Composer of symphonies, chamber works, and piano music <br> Born in Bonn <br> Died in Vienna <br> Composition | <a href="https://www.youtube.com/watch?v=-uSME7Bv4JE" target="_blank">Missa Solemnis, Kyrie</a>`,
+        popupContent: `Composer of symphonies, chamber works, and piano music <br> Born in Bonn <br> Died in Vienna <br> Composition | <a class="youtubeLinkAlias" href="javascript:void(0)">Missa Solemnis, Kyrie</a>`,
+        youtubeLink: 'https://www.youtube.com/embed/FNXMVzH_Dys?&autoplay=1;',
         isDisplaying: false,
         isUpdatedGraphicDisplaying: false
     },
@@ -261,7 +281,8 @@ let composers = [
             latitude: 48.0656
         },
         popupTitle: 'Joseph Haydn (1732 – 1809)',
-        popupContent: `Composer of symphonies, chamber works, and piano music <br> Born in Rohrau <br> Died in Vienna <br> Composition | <a href="https://www.youtube.com/watch?v=diz1sVIhNDA" target="_blank">Piano Sonata no. 47 in B minor Hob. XVI:32</a>`,
+        popupContent: `Composer of symphonies, chamber works, and piano music <br> Born in Rohrau <br> Died in Vienna <br> Composition | <a class="youtubeLinkAlias" href="javascript:void(0)">The Creation, Overture</a>`,
+        youtubeLink: 'https://www.youtube.com/embed/8omYmytYvlo?&autoplay=1;',
         isDisplaying: false,
         isUpdatedGraphicDisplaying: false
     },
@@ -275,7 +296,8 @@ let composers = [
             latitude: 47.8095
         },
         popupTitle: 'Wolfgang Amadeus Mozart (1756 – 1791)',
-        popupContent: `Composer of symphonies, chamber works, and piano music <br> Born in Salzburg <br> Died in Vienna <br> Composition | <a href="https://www.youtube.com/watch?v=8oESM64gU5M&t=136s" target="_blank">Lacrimosa</a>`,
+        popupContent: `Composer of symphonies, chamber works, and piano music <br> Born in Salzburg <br> Died in Vienna <br> Composition | <a class="youtubeLinkAlias" href="javascript:void(0)">Lacrimosa</a>`,
+        youtubeLink: 'https://www.youtube.com/embed/8oESM64gU5M?&autoplay=1;',
         isDisplaying: false,
         isUpdatedGraphicDisplaying: false
     },
@@ -289,7 +311,8 @@ let composers = [
             latitude: 45.1936
         },
         popupTitle: 'Antonio Salieri (1750 – 1825)',
-        popupContent: `Composer of operas, sacred, and instrumental works <br> Born in Legnago <br> Died in Vienna <br> Composition | <a href="https://www.youtube.com/watch?v=G_5Dr8Bz5Bc" target="_blank">Sinfonia Veneziana</a>`,
+        popupContent: `Composer of operas, sacred, and instrumental works <br> Born in Legnago <br> Died in Vienna <br> Composition | <a class="youtubeLinkAlias" href="javascript:void(0)">Sinfonia Veneziana</a>`,
+        youtubeLink: 'https://www.youtube.com/embed/G_5Dr8Bz5Bc?&autoplay=1;',
         isDisplaying: false,
         isUpdatedGraphicDisplaying: false
     },
@@ -303,7 +326,8 @@ let composers = [
             latitude: 54.1330
         },
         popupTitle: 'Carl Maria von Weber (1786 – 1826)',
-        popupContent: `Composer of operas, symphonies, and concertos <br> Born in Eutin <br> Died in London <br> Composition | <a href="https://www.youtube.com/watch?v=ZdMqHNcL6xI" target="_blank">Der Freischutz, Overture</a>`,
+        popupContent: `Composer of operas, symphonies, and concertos <br> Born in Eutin <br> Died in London <br> Composition | <a class="youtubeLinkAlias" href="javascript:void(0)">Der Freischutz, Overture</a>`,
+        youtubeLink: 'https://www.youtube.com/embed/ZdMqHNcL6xI?&autoplay=1;',
         isDisplaying: false,
         isUpdatedGraphicDisplaying: false
     },
@@ -317,7 +341,8 @@ let composers = [
             latitude: 48.2266
         },
         popupTitle: 'Franz Schubert (1797 – 1828)',
-        popupContent: `Composer of songs, symphonies, chamber and piano music <br> Born in Vienna <br> Died in Vienna <br> Composition | <a href="https://www.youtube.com/watch?v=X3JVZZ-INyM" target="_blank">Gute Nacht</a>`,
+        popupContent: `Composer of songs, symphonies, chamber and piano music <br> Born in Vienna <br> Died in Vienna <br> Composition | <a class="youtubeLinkAlias" href="javascript:void(0)">Gute Nacht</a>`,
+        youtubeLink: 'https://www.youtube.com/embed/_LpiqWJ1Jl4?&autoplay=1;',
         isDisplaying: false,
         isUpdatedGraphicDisplaying: false
     },
@@ -331,7 +356,8 @@ let composers = [
             latitude: 45.3938
         },
         popupTitle: 'Hector Berlioz (1803 – 1869)',
-        popupContent: `Composer of symphonies, choral music and operas <br> Born in La Côte-Saint-André (south-eastern France) <br> Died in Paris <br> Composition | <a href="https://www.youtube.com/watch?v=Rp45bQkRLGM" target="_blank">L'enfance du Christ, L'Adieu des bergers à la sainte famille</a>`,
+        popupContent: `Composer of symphonies, choral music and operas <br> Born in La Côte-Saint-André (south-eastern France) <br> Died in Paris <br> Composition | <a class="youtubeLinkAlias" href="javascript:void(0)">L'enfance du Christ, L'Adieu des bergers à la sainte famille</a>`,
+        youtubeLink: 'https://www.youtube.com/embed/Rp45bQkRLGM?&autoplay=1;',
         isDisplaying: false,
         isUpdatedGraphicDisplaying: false
     },
@@ -345,7 +371,8 @@ let composers = [
             latitude: 52.2574
         },
         popupTitle: 'Frédéric Chopin (1810 – 1849)',
-        popupContent: `Composer of piano music <br> Born in Żelazowa Wola (near Warsaw) <br> Died in Paris <br> Composition | <a href="https://www.youtube.com/watch?v=X65vRfdHmCc" target="_blank">Andante Spianato</a>`,
+        popupContent: `Composer of piano music <br> Born in Żelazowa Wola (near Warsaw) <br> Died in Paris <br> Composition | <a class="youtubeLinkAlias" href="javascript:void(0)">Andante Spianato</a>`,
+        youtubeLink: 'https://www.youtube.com/embed/X65vRfdHmCc?&autoplay=1;',
         isDisplaying: false,
         isUpdatedGraphicDisplaying: false
     },
@@ -359,7 +386,8 @@ let composers = [
             latitude: 47.5653
         },
         popupTitle: 'Franz Liszt (1811 – 1886)',
-        popupContent: `Composer of piano music, piano transcriptions and symphonic poems <br> Born in Doborján <br> Died in Bayreuth <br> Composition | <a href="https://www.youtube.com/watch?v=3JXMdpGpfBU" target="_blank">Un Sospiro</a>`,
+        popupContent: `Composer of piano music, piano transcriptions and symphonic poems <br> Born in Doborján <br> Died in Bayreuth <br> Composition | <a class="youtubeLinkAlias" href="javascript:void(0)">Un Sospiro</a>`,
+        youtubeLink: 'https://www.youtube.com/embed/3JXMdpGpfBU?&autoplay=1;',
         isDisplaying: false,
         isUpdatedGraphicDisplaying: false
     },
@@ -373,7 +401,8 @@ let composers = [
             latitude: 53.5511
         },
         popupTitle: 'Felix Mendelssohn (1809 – 1847)',
-        popupContent: `Composer of symphonies, concertos, chamber and piano music <br> Born in Hamburg <br> Died in Leipzig <br> Composition | <a href="https://www.youtube.com/watch?v=zcogD-hHEYs" target="_blank">Hebrides Overture (Fingal's Cave)</a>`,
+        popupContent: `Composer of symphonies, concertos, chamber and piano music <br> Born in Hamburg <br> Died in Leipzig <br> Composition | <a class="youtubeLinkAlias" href="javascript:void(0)">Hebrides Overture (Fingal's Cave)</a>`,
+        youtubeLink: 'https://www.youtube.com/embed/MdQyN7MYSN8?&autoplay=1;',
         isDisplaying: false,
         isUpdatedGraphicDisplaying: false
     },
@@ -387,7 +416,8 @@ let composers = [
             latitude: 53.5511
         },
         popupTitle: 'Johannes Brahms (1833 – 1897)',
-        popupContent: `Composer of orchestral, choral, chamber and piano music <br> Born in Hamburg <br> Died in Vienna <br> Composition | <a href="https://www.youtube.com/watch?v=YD8i0jUmbF8" target="_blank">Intermezzo Op. 117, No. 1</a>`,
+        popupContent: `Composer of orchestral, choral, chamber and piano music <br> Born in Hamburg <br> Died in Vienna <br> Composition | <a class="youtubeLinkAlias" href="javascript:void(0)">Intermezzo Op. 117, No. 1</a>`,
+        youtubeLink: 'https://www.youtube.com/embed/dvhfG__SPbQ?&autoplay=1;',
         isDisplaying: false,
         isUpdatedGraphicDisplaying: false
     },
@@ -401,7 +431,8 @@ let composers = [
             latitude: 60.3913
         },
         popupTitle: 'Edvard Grieg (1843 – 1907)',
-        popupContent: `Composer of piano, vocal, orchestral, chamber, and incidental music <br> Born in Bergen <br> Died in Bergen <br> Composition | <a href="https://www.youtube.com/watch?v=-rh8gMvzPw0" target="_blank">Peer Gynt, Morning Mood</a>`,
+        popupContent: `Composer of piano, vocal, orchestral, chamber, and incidental music <br> Born in Bergen <br> Died in Bergen <br> Composition | <a class="youtubeLinkAlias" href="javascript:void(0)">Peer Gynt, Morning Mood</a>`,
+        youtubeLink: 'https://www.youtube.com/embed/kzTQ9fjforY?&autoplay=1;',
         isDisplaying: false,
         isUpdatedGraphicDisplaying: false
     },
@@ -415,7 +446,8 @@ let composers = [
             latitude: 50.2615
         },
         popupTitle: 'Antonín Dvořák (1841 – 1904)',
-        popupContent: `Composer of concertos, symphonic, choral and operatic music <br> Born in Nelahozeves (near Prague) <br> Died in Prague <br> Composition | <a href="https://www.youtube.com/watch?v=ASlch7R1Zvo" target="_blank">Symphony no. 9, "From The New World" mvt. II, Largo</a>`,
+        popupContent: `Composer of concertos, symphonic, choral and operatic music <br> Born in Nelahozeves (near Prague) <br> Died in Prague <br> Composition | <a class="youtubeLinkAlias" href="javascript:void(0)">Symphony no. 9, "From The New World" mvt. II, Largo</a>`,
+        youtubeLink: 'https://www.youtube.com/embed/uCydQm83cJQ?&autoplay=1;',
         isDisplaying: false,
         isUpdatedGraphicDisplaying: false
     },
@@ -429,7 +461,8 @@ let composers = [
             latitude: 56.2811
         },
         popupTitle: 'Modest Mussorgsky (1839 – 1881)',
-        popupContent: `Composer of orchestral, opera, vocal and piano music <br> Born in Karevo (Pskov Governorate) <br> Died in Saint Petersburg <br> Composition | <a href="https://www.youtube.com/watch?v=iCEDfZgDPS8" target="_blank">Night on Bald Mountain</a>`,
+        popupContent: `Composer of orchestral, opera, vocal and piano music <br> Born in Karevo (Pskov Governorate) <br> Died in Saint Petersburg <br> Composition | <a class="youtubeLinkAlias" href="javascript:void(0)">Night on Bald Mountain</a>`,
+        youtubeLink: 'https://www.youtube.com/embed/by4khgR7Q5k?&autoplay=1;',
         isDisplaying: false,
         isUpdatedGraphicDisplaying: false
     },
@@ -443,7 +476,8 @@ let composers = [
             latitude: 48.2077
         },
         popupTitle: 'Anton Bruckner (1824 – 1896)',
-        popupContent: `Composer of orchestral and choral music <br> Born in Ansfelden (now a suburb of Linz) <br> Died in Vienna <br> Composition | <a href="https://www.youtube.com/watch?v=ov-OAmpcRfw" target="_blank">Os Justi Meditabitur</a>`,
+        popupContent: `Composer of orchestral and choral music <br> Born in Ansfelden (now a suburb of Linz) <br> Died in Vienna <br> Composition | <a class="youtubeLinkAlias" href="javascript:void(0)">Os Justi Meditabitur</a>`,
+        youtubeLink: 'https://www.youtube.com/embed/AXv-QUU2mgk?&autoplay=1;',
         isDisplaying: false,
         isUpdatedGraphicDisplaying: false
     },
@@ -457,7 +491,8 @@ let composers = [
             latitude: 57.0409
         },
         popupTitle: 'Pyotr Ilyich Tchaikovsky (1840 – 1893)',
-        popupContent: `Composer of orchestral, ballet, chamber, piano and liturgical music <br> Born in Votkinsk (Vyatka Governorate) <br> Died in Saint Petersburg <br> Composition | <a href="https://www.youtube.com/watch?v=BWerj8FcprM" target="_blank">Piano Concerto No. 1, B Flat Minor</a>`,
+        popupContent: `Composer of orchestral, ballet, chamber, piano and liturgical music <br> Born in Votkinsk (Vyatka Governorate) <br> Died in Saint Petersburg <br> Composition | <a class="youtubeLinkAlias" href="javascript:void(0)">Piano Concerto No. 1, B Flat Minor</a>`,
+        youtubeLink: 'https://www.youtube.com/embed/BWerj8FcprM?&autoplay=1;',
         isDisplaying: false,
         isUpdatedGraphicDisplaying: false
     },
@@ -471,7 +506,8 @@ let composers = [
             latitude: 43.8429
         },
         popupTitle: 'Giacomo Puccini (1858 – 1924)',
-        popupContent: `Composer of opera <br> Born in Lucca <br> Died in Brussels <br> Composition | <a href="https://www.youtube.com/watch?v=rTFUM4Uh_6Y" target="_blank">Nessun Dorma (from Turandot)</a>`,
+        popupContent: `Composer of opera <br> Born in Lucca <br> Died in Brussels <br> Composition | <a class="youtubeLinkAlias" href="javascript:void(0)">Nessun Dorma (from Turandot)</a>`,
+        youtubeLink: 'https://www.youtube.com/embed/LvUIITL0QqQ?&autoplay=1;',
         isDisplaying: false,
         isUpdatedGraphicDisplaying: false
     },
@@ -485,7 +521,8 @@ let composers = [
             latitude: 48.8566
         },
         popupTitle: 'Camille Saint-Saëns (1835 – 1921)',
-        popupContent: `Composer of orchestral, opera, piano and chamber music <br> Born in Paris <br> Died in Algiers <br> Composition | <a href="https://www.youtube.com/watch?v=b44-5M4e9nI" target="_blank">The Swan, Carnival of the Animals</a>`,
+        popupContent: `Composer of orchestral, opera, piano and chamber music <br> Born in Paris <br> Died in Algiers <br> Composition | <a class="youtubeLinkAlias" href="javascript:void(0)">The Swan, Carnival of the Animals</a>`,
+        youtubeLink: 'https://www.youtube.com/embed/zNbXuFBjncw?&autoplay=1;',
         isDisplaying: false,
         isUpdatedGraphicDisplaying: false
     },
@@ -499,7 +536,8 @@ let composers = [
             latitude: 48.1351
         },
         popupTitle: 'Richard Strauss (1864 – 1949)',
-        popupContent: `Composer of orchestral, opera, ballet, piano and chamber music <br> Born in Munich <br> Died in Garmisch-Partenkirchen (Bavaria) <br> Composition | <a href="https://www.youtube.com/watch?v=bMrg9blUTig" target="_blank">Morgen</a>`,
+        popupContent: `Composer of orchestral, opera, ballet, piano and chamber music <br> Born in Munich <br> Died in Garmisch-Partenkirchen (Bavaria) <br> Composition | <a class="youtubeLinkAlias" href="javascript:void(0)">Morgen</a>`,
+        youtubeLink: 'https://www.youtube.com/embed/bMrg9blUTig?&autoplay=1;',
         isDisplaying: false,
         isUpdatedGraphicDisplaying: false
     },
@@ -513,7 +551,8 @@ let composers = [
             latitude: 49.5926
         },
         popupTitle: 'Gustav Mahler (1860 – 1911)',
-        popupContent: `Composer of songs and orchestral music <br> Born in Kaliště <br> Died in Vienna <br> Composition | <a href="https://www.youtube.com/watch?v=TzJyIWxjX9o" target="_blank">Ich bin der Welt abhanden gekommen</a>`,
+        popupContent: `Composer of songs and orchestral music <br> Born in Kaliště <br> Died in Vienna <br> Composition | <a class="youtubeLinkAlias" href="javascript:void(0)">Ich bin der Welt abhanden gekommen</a>`,
+        youtubeLink: 'https://www.youtube.com/embed/TzJyIWxjX9o?&autoplay=1;',
         isDisplaying: false,
         isUpdatedGraphicDisplaying: false
     },
@@ -527,7 +566,8 @@ let composers = [
             latitude: 48.8989
         },
         popupTitle: 'Claude Debussy (1862 – 1918)',
-        popupContent: `Composer of orchestral, piano, chamber and ballet music <br> Born in Paris <br> Died in Paris <br> Composition | <a href="https://www.youtube.com/watch?v=JjKaOfpJkWY" target="_blank">Children's Corner, I. Doctor Gradus ad Parnassum</a>`,
+        popupContent: `Composer of orchestral, piano, chamber and ballet music <br> Born in Paris <br> Died in Paris <br> Composition | <a class="youtubeLinkAlias" href="javascript:void(0)">Children's Corner, I. Doctor Gradus ad Parnassum</a>`,
+        youtubeLink: 'https://www.youtube.com/embed/o0rApPwATew?&autoplay=1;',
         isDisplaying: false,
         isUpdatedGraphicDisplaying: false
     },
@@ -541,7 +581,8 @@ let composers = [
             latitude: 57.9124
         },
         popupTitle: 'Sergei Rachmaninoff (1873 – 1943)',
-        popupContent: `Composer of piano, orchestral and liturgical music <br> Born in Starorussky Uyezd <br> Died in Beverly Hills <br> Composition | <a href="https://www.youtube.com/watch?v=InMhSNBlIg8" target="_blank">Bogoroditse Devo (from All-Night-Vigil)</a>`,
+        popupContent: `Composer of piano, orchestral and liturgical music <br> Born in Starorussky Uyezd <br> Died in Beverly Hills <br> Composition | <a class="youtubeLinkAlias" href="javascript:void(0)">Bogoroditse Devo (from All-Night-Vigil)</a>`,
+        youtubeLink: 'https://www.youtube.com/embed/InMhSNBlIg8?&autoplay=1;',
         isDisplaying: false,
         isUpdatedGraphicDisplaying: false
     },
@@ -555,7 +596,8 @@ let composers = [
             latitude: 60.9929
         },
         popupTitle: 'Jean Sibelius (1865 – 1957)',
-        popupContent: `Composer of orchestral, chamber and vocal music <br> Born in Hämeenlinna <br> Died in Ainola <br> Composition | <a href="https://www.youtube.com/watch?v=F5zg_af9b8c" target="_blank">Finlandia</a>`,
+        popupContent: `Composer of orchestral, chamber and vocal music <br> Born in Hämeenlinna <br> Died in Ainola <br> Composition | <a class="youtubeLinkAlias" href="javascript:void(0)">Finlandia</a>`,
+        youtubeLink: 'https://www.youtube.com/embed/qOSaT6U4e-8?&autoplay=1;',
         isDisplaying: false,
         isUpdatedGraphicDisplaying: false
     },
@@ -569,7 +611,8 @@ let composers = [
             latitude: 48.2082
         },
         popupTitle: 'Arnold Schoenberg (1874 – 1951)',
-        popupContent: `Composer of orchestral, chamber, piano and vocal music <br> Born in Vienna <br> Died in Los Angeles <br> Composition | <a href="https://www.youtube.com/watch?v=-WsqK1mCGeY" target="_blank">Gurre-Lieder</a>`,
+        popupContent: `Composer of orchestral, chamber, piano and vocal music <br> Born in Vienna <br> Died in Los Angeles <br> Composition | <a class="youtubeLinkAlias" href="javascript:void(0)">Gurre-Lieder</a>`,
+        youtubeLink: 'https://www.youtube.com/embed/FXhAtBT57zA?&autoplay=1;',
         isDisplaying: false,
         isUpdatedGraphicDisplaying: false
     },
@@ -583,7 +626,8 @@ let composers = [
             latitude: 59.9153
         },
         popupTitle: 'Igor Stravinsky (1882 – 1971)',
-        popupContent: `Composer of ballet, orchestral, operatic, incidental, choral and chamber music <br> Born in Oranienbaum (a suburb of St. Petersburg) <br> Died in New York <br> Composition | <a href="https://www.youtube.com/watch?v=FXhAtBT57zA" target="_blank">Firebird, Finale</a>`,
+        popupContent: `Composer of ballet, orchestral, operatic, incidental, choral and chamber music <br> Born in Oranienbaum (a suburb of St. Petersburg) <br> Died in New York <br> Composition | <a class="youtubeLinkAlias" href="javascript:void(0)">Firebird, Finale</a>`,
+        youtubeLink: 'https://www.youtube.com/embed/-WsqK1mCGeY?&autoplay=1;',
         isDisplaying: false,
         isUpdatedGraphicDisplaying: false
     },
@@ -597,7 +641,8 @@ let composers = [
             latitude: 46.0593
         },
         popupTitle: 'Béla Bartók (1881 – 1945)',
-        popupContent: `Composer of orchestral, operatic, piano, choral and chamber music <br> Born in Nagyszentmiklós (now Sânnicolau Mare Romania) <br> Died in New York <br> Composition | <a href="https://www.youtube.com/watch?v=4HAIHSqiwAA" target="_blank">Romanian Folk Dances</a>`,
+        popupContent: `Composer of orchestral, operatic, piano, choral and chamber music <br> Born in Nagyszentmiklós (now Sânnicolau Mare Romania) <br> Died in New York <br> Composition | <a class="youtubeLinkAlias" href="javascript:void(0)">Romanian Folk Dances</a>`,
+        youtubeLink: 'https://www.youtube.com/embed/4HAIHSqiwAA?&autoplay=1;',
         isDisplaying: false,
         isUpdatedGraphicDisplaying: false
     },
@@ -611,7 +656,8 @@ let composers = [
             latitude: 43.3875
         },
         popupTitle: 'Maurice Ravel (1875 – 1937)',
-        popupContent: `Composer of piano, orchestral, operatic and chamber music <br> Born in Ciboure (near Biarritz) <br> Died in Paris <br> Composition | <a href="https://www.youtube.com/watch?v=2uDiT3uBDQU" target="_blank">Daybreak (from Daphnis et Chloe)</a>`,
+        popupContent: `Composer of piano, orchestral, operatic and chamber music <br> Born in Ciboure (near Biarritz) <br> Died in Paris <br> Composition | <a class="youtubeLinkAlias" href="javascript:void(0)">Daybreak (from Daphnis et Chloe)</a>`,
+        youtubeLink: 'https://www.youtube.com/embed/ovfu-5RO278?&autoplay=1;',
         isDisplaying: false,
         isUpdatedGraphicDisplaying: false
     },
@@ -625,7 +671,8 @@ let composers = [
             latitude: 59.9343
         },
         popupTitle: 'Dmitri Shostakovich (1906 – 1975)',
-        popupContent: `Composer of symphonic, orchestral, operatic, piano, choral, chamber and film music <br> Born in St. Petersburg <br> Died in Moscow <br> Composition | <a href="https://www.youtube.com/watch?v=T1h1NJMKtnc" target="_blank">Symphony No. 5, Finale</a>`,
+        popupContent: `Composer of symphonic, orchestral, operatic, piano, choral, chamber and film music <br> Born in St. Petersburg <br> Died in Moscow <br> Composition | <a class="youtubeLinkAlias" href="javascript:void(0)">Symphony No. 5, Finale</a>`,
+        youtubeLink: 'https://www.youtube.com/embed/xU9_uAb7pZs?&autoplay=1;',
         isDisplaying: false,
         isUpdatedGraphicDisplaying: false
     },
@@ -639,7 +686,8 @@ let composers = [
             latitude: 48.0468
         },
         popupTitle: 'Sergei Prokofiev (1906 – 1975)',
-        popupContent: `Composer of orchestral, symphonic, operatic, piano, choral, chamber and film music <br> Born in Sontsivka <br> Died in Moscow <br> Composition | <a href="https://www.youtube.com/watch?v=5QsRDpsItq0" target="_blank">Troika (from Lieutenant Kijé)</a>`,
+        popupContent: `Composer of orchestral, symphonic, operatic, piano, choral, chamber and film music <br> Born in Sontsivka <br> Died in Moscow <br> Composition | <a class="youtubeLinkAlias" href="javascript:void(0)">Troika (from Lieutenant Kijé)</a>`,
+        youtubeLink: 'https://www.youtube.com/embed/5QsRDpsItq0?&autoplay=1;',
         isDisplaying: false,
         isUpdatedGraphicDisplaying: false
     },
@@ -653,7 +701,8 @@ let composers = [
             latitude: 52.4811
         },
         popupTitle: 'Benjamin Britten (1913 – 1976)',
-        popupContent: `Composer of operatic, orchestral, chamber and vocal music <br> Born in Lowestoft <br> Died in Aldeburgh <br> Composition | <a href="https://www.youtube.com/watch?v=kmocmreevF8" target="_blank">A Hymn to the Virgin</a>`,
+        popupContent: `Composer of operatic, orchestral, chamber and vocal music <br> Born in Lowestoft <br> Died in Aldeburgh <br> Composition | <a class="youtubeLinkAlias" href="javascript:void(0)">A Hymn to the Virgin</a>`,
+        youtubeLink: 'https://www.youtube.com/embed/kmocmreevF8?&autoplay=1;',
         isDisplaying: false,
         isUpdatedGraphicDisplaying: false
     },
@@ -667,7 +716,8 @@ let composers = [
             latitude: 48.2082
         },
         popupTitle: 'Anton Webern (1883 – 1945)',
-        popupContent: `Composer of chamber, orchestral, piano and vocal music <br> Born in Vienna <br> Died in Mittersill <br> Composition | <a href="https://www.youtube.com/watch?v=9VMIhkU_XpQ" target="_blank">Passacaglia Op. 1</a>`,
+        popupContent: `Composer of chamber, orchestral, piano and vocal music <br> Born in Vienna <br> Died in Mittersill <br> Composition | <a class="youtubeLinkAlias" href="javascript:void(0)">Passacaglia Op. 1</a>`,
+        youtubeLink: 'https://www.youtube.com/embed/9VMIhkU_XpQ?&autoplay=1;',
         isDisplaying: false,
         isUpdatedGraphicDisplaying: false
     },
@@ -681,7 +731,8 @@ let composers = [
             latitude: 43.9493
         },
         popupTitle: 'Olivier Messiaen (1908 – 1992)',
-        popupContent: `Composer of chamber, orchestral, organ, piano and choral music <br> Born in Avignon <br> Died in Clichy <br> Composition | <a href="https://www.youtube.com/watch?v=pJsG02KIcLM" target="_blank">Quartet for the End of Time, Praise to the Eternity of Jesus</a>`,
+        popupContent: `Composer of chamber, orchestral, organ, piano and choral music <br> Born in Avignon <br> Died in Clichy <br> Composition | <a class="youtubeLinkAlias" href="javascript:void(0)">Quartet for the End of Time, Praise to the Eternity of Jesus</a>`,
+        youtubeLink: 'https://www.youtube.com/embed/pJsG02KIcLM?&autoplay=1;',
         isDisplaying: false,
         isUpdatedGraphicDisplaying: false
     },
@@ -695,7 +746,8 @@ let composers = [
             latitude: 48.2082
         },
         popupTitle: 'Alban Berg (1885 – 1935)',
-        popupContent: `Composer of operatic, vocal, chamber, orchestral and piano works <br> Born in Vienna <br> Died in Vienna <br> Composition | <a href="https://www.youtube.com/watch?v=w8az7NBzQhQ" target="_blank">Violin Concerto, mvt. 2</a>`,
+        popupContent: `Composer of operatic, vocal, chamber, orchestral and piano works <br> Born in Vienna <br> Died in Vienna <br> Composition | <a class="youtubeLinkAlias" href="javascript:void(0)">Violin Concerto, mvt. 2</a>`,
+        youtubeLink: 'https://www.youtube.com/embed/wxRLgWYcW70?&autoplay=1;',
         isDisplaying: false,
         isUpdatedGraphicDisplaying: false
     },
@@ -709,7 +761,8 @@ let composers = [
             latitude: 49.4188
         },
         popupTitle: 'Erik Satie (1866 – 1925)',
-        popupContent: `Composer of piano, orchestral, dramatic and vocal music <br> Born in Honfleur <br> Died in Arcueil <br> Composition | <a href="https://www.youtube.com/watch?v=eMnxjdGTK4w" target="_blank">Gymnopédie No. 1</a>`,
+        popupContent: `Composer of piano, orchestral, dramatic and vocal music <br> Born in Honfleur <br> Died in Arcueil <br> Composition | <a class="youtubeLinkAlias" href="javascript:void(0)">Gymnopédie No. 1</a>`,
+        youtubeLink: 'https://www.youtube.com/embed/eMnxjdGTK4w?&autoplay=1;',
         isDisplaying: false,
         isUpdatedGraphicDisplaying: false
     }

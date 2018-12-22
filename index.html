@@ -12,6 +12,10 @@
     <link rel="stylesheet" href="https://js.arcgis.com/4.9/esri/css/main.css">
     <link rel="stylesheet" href="https://js.arcgis.com/4.9/esri/themes/dark/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
@@ -28,6 +32,12 @@
     <script src="https://js.arcgis.com/4.9"></script>
   </head>
   <body>
+      <div class="fancyDiv"></div>
+      <!-- <iframe width="360" height="215" src="https://www.youtube.com/embed/_dV5b8AuLHg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+      <!-- <a data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk&amp;autoplay=1&amp;rel=0&amp;controls=0&amp;showinfo=0">
+        YouTube video - hide controls and info
+    </a> -->
+      <!-- <a data-fancybox width="640" height="320" href="https://www.youtube.com/watch?v=_sI_Ps7JSEk">Nuper Rosarum Flores</a> -->
     <output id="year" name="year">1390</output>
     <div class="input-div">
       <input type="range" id="test5" step="1" min="1390" max="2000" value="1390" oninput="year.value = test5.value" />
