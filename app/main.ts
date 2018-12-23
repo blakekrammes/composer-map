@@ -102,6 +102,12 @@ window.setInterval(() => {
                 composer.isDisplaying = true;
             }
         }
+        else if (intYear < composer.birth || intYear > composer.death) {
+            graphicsLayer.graphics.remove(window[composer.name+'Graphic']);   
+            composer.isDisplaying = false;
+            graphicsLayer.graphics.remove(window[composer.name+'enlargedGraphic']);
+            composer.isUpdatedGraphicDisplaying = false;
+        }
     });
 
     // remove any composer graphics that are not living at the specified year
@@ -113,6 +119,19 @@ window.setInterval(() => {
             composer.isUpdatedGraphicDisplaying = false;
         }
     });
+
+//     let thingsToRemove = composers.filter(function(composer) {
+//         if (intYear < composer.birth && intYear > composer.death) {
+//             return true;
+//         }
+//         else {
+//             return false;
+//         }
+//     })
+
+// console.log(thingsToRemove)
+
+//     graphicsLayer.graphics.removeMany(thingsToRemove);
 
 }, 100);
 
