@@ -16,10 +16,17 @@ define(["require", "exports", "esri/Map", "esri/views/MapView", "esri/geometry/P
             fillOpacity: 0.2
         }
     });
-    var fancyDiv;
+    var fancyDiv = document.getElementsByClassName('fancyDiv')[0];
     var youtubeLink;
+    var youFrame;
     var graphicsLayer = new GraphicsLayer({});
     var year;
+    var closeButtonDiv = document.getElementById("buttonDiv");
+    function closeVideo(e) {
+        fancyDiv.style.display = "none";
+        youFrame.remove();
+        closeButtonDiv.style.display = "none";
+    }
     window.setInterval(function () {
         year = document.getElementById('year').value;
         var intYear = parseInt(year, 10);
@@ -30,10 +37,21 @@ define(["require", "exports", "esri/Map", "esri/views/MapView", "esri/geometry/P
                 var youtub_1 = composer.youtubeLink;
                 function clickCallback(e) {
                     if (composer.popupContent.includes(e.target.innerHTML)) {
-                        fancyDiv.innerHTML = '<iframe id="youFrame" width="360" height="215" src=`${youtub}` frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
-                        var youFrame = document.getElementById("youFrame");
+                        // console.log('hi')
+                        if (fancyDiv === undefined) {
+                            // console.log(fancyDiv)
+                            fancyDiv = document.createElement("div");
+                            // console.log(fancyDiv)
+                            console.log(youFrame);
+                        }
+                        fancyDiv.innerHTML = '<iframe id="youFrame" width="360" height="215" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+                        youFrame = document.getElementById("youFrame");
                         youFrame.src = youtub_1;
+                        closeButtonDiv.style.display = "block";
+                        fancyDiv.style.display = "block";
+                        view.ui.add(closeButtonDiv, "bottom-right");
                         view.ui.add(fancyDiv, "bottom-right");
+                        closeButtonDiv.addEventListener('click', closeVideo);
                     }
                 }
                 if (youtubeLink !== undefined) {

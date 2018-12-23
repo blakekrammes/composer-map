@@ -26,12 +26,20 @@ const view = new MapView({
 });
 
 
-let fancyDiv:any;
+let fancyDiv:any = (<HTMLElement>document.getElementsByClassName('fancyDiv')[0]);
 let youtubeLink:any;
+let youFrame:any;
 
 const graphicsLayer = new GraphicsLayer({}); 
 
-let year;
+let year:any;
+let closeButtonDiv = (<HTMLElement>document.getElementById("buttonDiv"));
+
+function closeVideo(e:any) {
+    fancyDiv.style.display = "none";
+    youFrame.remove();
+    closeButtonDiv.style.display = "none";
+}
 
 window.setInterval(() => {
     year = (<HTMLOutputElement>document.getElementById('year')).value;
@@ -46,11 +54,22 @@ window.setInterval(() => {
 
             function clickCallback(e) {                
                 if (composer.popupContent.includes(e.target.innerHTML)) {
-                
-                    fancyDiv.innerHTML = '<iframe id="youFrame" width="360" height="215" src=`${youtub}` frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
-                    let youFrame = document.getElementById("youFrame");
+                    // console.log('hi')
+                    if (fancyDiv === undefined) {
+                        // console.log(fancyDiv)
+                        fancyDiv = document.createElement("div");
+                        // console.log(fancyDiv)
+                        console.log(youFrame)
+                    }
+                    fancyDiv.innerHTML = '<iframe id="youFrame" width="360" height="215" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+                    youFrame = document.getElementById("youFrame"); 
                     youFrame.src = youtub;
+                    
+                    closeButtonDiv.style.display = "block";
+                    fancyDiv.style.display = "block";
+                    view.ui.add(closeButtonDiv, "bottom-right");
                     view.ui.add(fancyDiv, "bottom-right");
+                    closeButtonDiv.addEventListener('click', closeVideo);
                 }
             }
         

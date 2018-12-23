@@ -50,6 +50,10 @@ img:hover {
     cursor: pointer;
 }
 
+#buttonDiv {
+    display: none;
+}
+
 @media only screen and (max-width: 400px) {
     .input-div {
         margin-top: 80px;
