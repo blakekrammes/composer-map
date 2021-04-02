@@ -1,4 +1,4 @@
-### Link to live site: https://blakesters.github.io/composer-map/
+### Link to live site: https://blakekrammes.github.io/composer-map/
 
 ## Scroll through classical music history geographically
 ![Main View](https://github.com/Blakesters/composer-map/blob/master/screenshots/scroll.png)
