@@ -1,5 +1,3 @@
-// import 'fancybox'; 
-
 let composers = [
     {
         name: "duFay",

@@ -6,7 +6,6 @@ import Graphic = require("esri/Graphic");
 import GraphicsLayer = require("esri/layers/GraphicsLayer");
 import PopupTemplate = require("esri/PopupTemplate");
 import composers from './composers';
-import $ = require('jquery');
 
 // esri map
 const map = new EsriMap({
